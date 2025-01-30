@@ -54,12 +54,55 @@ class LightTheme extends AppTheme {
       );
 
   @override
+  InputDecorationTheme get inputDecorationTheme => InputDecorationTheme(
+        filled: true,
+        fillColor: color.surface, // Background color
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide.none,
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide.none,
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide(color: color.primaryColor, width: 2),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide(color: color.error, width: 2),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide(color: color.error, width: 2),
+        ),
+        disabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(15),
+          borderSide: BorderSide(color: color.textSecondary.withOpacity(0.5)),
+        ),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 18,
+        ),
+        hintStyle: textTheme.bodyMedium?.copyWith(color: color.textSecondary),
+        labelStyle: textTheme.bodyLarge?.copyWith(color: color.textPrimary),
+        floatingLabelStyle: textTheme.bodyLarge
+            ?.copyWith(color: color.primaryColor, fontWeight: FontWeight.w600),
+        helperStyle: textTheme.bodySmall?.copyWith(color: color.textSecondary),
+        errorStyle: textTheme.bodySmall?.copyWith(color: color.error),
+        prefixStyle: textTheme.bodyLarge?.copyWith(color: color.textPrimary),
+        suffixStyle: textTheme.bodyLarge?.copyWith(color: color.textPrimary),
+      );
+
+  @override
   ThemeData get theme => ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor: color.background,
         appBarTheme: AppBarTheme(backgroundColor: color.background),
         filledButtonTheme: filledButtonThemeData,
         outlinedButtonTheme: outlinedButtonThemeData,
+        inputDecorationTheme: inputDecorationTheme,
       );
 }
 

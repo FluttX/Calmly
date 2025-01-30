@@ -33,5 +33,7 @@ abstract class AppTheme {
 
   OutlinedButtonThemeData get outlinedButtonThemeData;
 
+  InputDecorationTheme get inputDecorationTheme;
+
   ThemeData get theme;
 }
