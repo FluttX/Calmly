@@ -37,11 +37,29 @@ class LightTheme extends AppTheme {
       );
 
   @override
+  OutlinedButtonThemeData get outlinedButtonThemeData =>
+      OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          backgroundColor: color.background,
+          foregroundColor: color.textPrimary,
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: color.textInversePrimary),
+            borderRadius: BorderRadius.circular(38),
+          ),
+          fixedSize: const Size(double.infinity, 62),
+          textStyle: textTheme.labelLarge?.copyWith(
+            color: color.textPrimary,
+          ),
+        ),
+      );
+
+  @override
   ThemeData get theme => ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor: color.background,
         appBarTheme: AppBarTheme(backgroundColor: color.background),
         filledButtonTheme: filledButtonThemeData,
+        outlinedButtonTheme: outlinedButtonThemeData,
       );
 }
 

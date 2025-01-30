@@ -34,6 +34,15 @@ class CounterView extends StatelessWidget {
               child: Text('Apply'.toUpperCase()),
             ),
           ),
+          const SizedBox(height: 20),
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.symmetric(horizontal: 16),
+            child: OutlinedButton(
+              onPressed: () {},
+              child: Text('CONTINUE WITH GOOGLE'.toUpperCase()),
+            ),
+          ),
         ],
       ),
     );
