@@ -27,12 +27,13 @@ class LightTheme extends AppTheme {
         style: FilledButton.styleFrom(
           backgroundColor: color.primaryColor,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(38),
+            borderRadius: BorderRadius.circular(15),
           ),
-          fixedSize: const Size(double.infinity, 62),
+          fixedSize: const Size(double.infinity, 60),
           textStyle: textTheme.labelLarge?.copyWith(
             color: color.textInversePrimary,
           ),
+          padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
       );
 
@@ -44,12 +45,15 @@ class LightTheme extends AppTheme {
           foregroundColor: color.textPrimary,
           shape: RoundedRectangleBorder(
             side: BorderSide(color: color.textInversePrimary),
-            borderRadius: BorderRadius.circular(38),
+            borderRadius: BorderRadius.circular(15),
           ),
-          fixedSize: const Size(double.infinity, 62),
+          fixedSize: const Size(double.infinity, 60),
           textStyle: textTheme.labelLarge?.copyWith(
             color: color.textPrimary,
+            fontSize: 14,
+            fontWeight: FontWeight.w500,
           ),
+          padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
       );
 

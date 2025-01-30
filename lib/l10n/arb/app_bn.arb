@@ -1,0 +1,13 @@
+{
+    "@@locale": "bn",
+    "login": "লগইন করুন",
+    "welcomeBack": "ফিরে আসার জন্য স্বাগতম!",
+    "continueWithGoogle": "গুগলের মাধ্যমে চালিয়ে যান",
+    "continueWithFacebook": "ফেসবুকের মাধ্যমে চালিয়ে যান",
+    "orLoginWithEmail": "অথবা ইমেইল দিয়ে লগইন করুন",
+    "emailAddress": "ইমেইল ঠিকানা",
+    "password": "পাসওয়ার্ড",
+    "forgetPassword": "পাসওয়ার্ড ভুলে গেছেন?",
+    "alreadyHaveAccount": "ইতিমধ্যেই একটি অ্যাকাউন্ট আছে?",
+    "signup": "নিবন্ধন করুন"
+}

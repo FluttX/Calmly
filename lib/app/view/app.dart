@@ -1,5 +1,5 @@
 import 'package:calmly/app/core/theme/light_theme.dart';
-import 'package:calmly/counter/counter.dart';
+import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +12,7 @@ class App extends StatelessWidget {
       theme: LightTheme().theme,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const CounterPage(),
+      home: const LoginScreen(),
     );
   }
 }

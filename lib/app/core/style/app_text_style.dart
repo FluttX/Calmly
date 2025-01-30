@@ -56,14 +56,14 @@ class AppTextStyle {
   static const TextStyle bodyMedium = TextStyle(
     fontSize: 14,
     fontWeight: FontWeight.w400,
-    color: _textPrimaryColor,
+    color: _textSecondaryColor,
     fontFamily: 'HelveticaNeue',
   );
 
   static const TextStyle bodySmall = TextStyle(
     fontSize: 12,
     fontWeight: FontWeight.w400,
-    color: _textPrimaryColor,
+    color: _textSecondaryColor,
     fontFamily: 'HelveticaNeue',
   );
 
@@ -77,7 +77,7 @@ class AppTextStyle {
   static const TextStyle button = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w600,
-    color: Colors.white,
+    color: _textSecondaryColor,
     fontFamily: 'HelveticaNeue',
   );
 

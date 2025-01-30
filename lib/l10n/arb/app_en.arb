@@ -1,7 +1,13 @@
 {
     "@@locale": "en",
-    "counterAppBarTitle": "Counter",
-    "@counterAppBarTitle": {
-        "description": "Text shown in the AppBar of the Counter Page"
-    }
+    "login": "LOG IN",
+    "welcomeBack": "Welcome Back!",
+    "continueWithGoogle": "CONTINUE WITH GOOGLE",
+    "continueWithFacebook": "CONTINUE WITH FACEBOOK",
+    "orLoginWithEmail": "or login with email",
+    "emailAddress": "Email address",
+    "password": "Password",
+    "forgetPassword": "Forget Password?",
+    "alreadyHaveAccount": "Already have an account?",
+    "signup" : "SIGN UP"
 }

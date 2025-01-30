@@ -96,8 +96,8 @@ import 'package:calmly/l10n/l10n.dart';
 
 @override
 Widget build(BuildContext context) {
-  final l10n = context.l10n;
-  return Text(l10n.helloWorld);
+  final tr = context.tr;
+  return Text(tr.helloWorld);
 }
 ```
 

@@ -1,7 +1,13 @@
 {
     "@@locale": "es",
-    "counterAppBarTitle": "Contador",
-    "@counterAppBarTitle": {
-        "description": "Texto mostrado en la AppBar de la página del contador"
-    }
+    "login": "INICIAR SESIÓN",
+    "welcomeBack": "¡Bienvenido de nuevo!",
+    "continueWithGoogle": "CONTINUAR CON GOOGLE",
+    "continueWithFacebook": "CONTINUAR CON FACEBOOK",
+    "orLoginWithEmail": "o iniciar sesión con correo electrónico",
+    "emailAddress": "Dirección de correo electrónico",
+    "password": "Contraseña",
+    "forgetPassword": "¿Olvidaste tu contraseña?",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signup": "REGISTRARSE"
 }
