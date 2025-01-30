@@ -7,8 +7,19 @@ class LightTheme extends AppTheme {
   AppColor get color => LightColor();
 
   @override
-  TextTheme get textTheme => TextTheme(
+  TextTheme get textTheme => const TextTheme(
         headlineLarge: AppTextStyle.headlineLarge,
+        headlineMedium: AppTextStyle.headlineMedium,
+        headlineSmall: AppTextStyle.headlineSmall,
+        titleLarge: AppTextStyle.subtitleLarge,
+        titleMedium: AppTextStyle.subtitleMedium,
+        titleSmall: AppTextStyle.subtitleSmall,
+        bodyLarge: AppTextStyle.bodyLarge,
+        bodyMedium: AppTextStyle.bodyMedium,
+        bodySmall: AppTextStyle.bodySmall,
+        labelLarge: AppTextStyle.button,
+        labelMedium: AppTextStyle.caption,
+        labelSmall: AppTextStyle.overLine,
       );
 
   @override
@@ -19,7 +30,9 @@ class LightTheme extends AppTheme {
             borderRadius: BorderRadius.circular(38),
           ),
           fixedSize: const Size(double.infinity, 62),
-          textStyle: TextStyle(color: color.textInversePrimary),
+          textStyle: textTheme.labelLarge?.copyWith(
+            color: color.textInversePrimary,
+          ),
         ),
       );
 
