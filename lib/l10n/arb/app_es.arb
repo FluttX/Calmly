@@ -1,5 +1,7 @@
 {
     "@@locale": "es",
+    "onboardingTitle": "Somos lo que hacemos",
+    "onboardingSubtitle": "Miles de personas usan Silent Moon para pequeñas meditaciones",
     "login": "INICIAR SESIÓN",
     "welcomeBack": "¡Bienvenido de nuevo!",
     "continueWithGoogle": "CONTINUAR CON GOOGLE",

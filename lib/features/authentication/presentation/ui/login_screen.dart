@@ -1,3 +1,4 @@
+import 'package:calmly/app/core/common/common.dart';
 import 'package:calmly/app/core/theme/theme.dart';
 import 'package:calmly/features/authentication/presentation/widgets/app_text_form_field.dart';
 import 'package:calmly/l10n/l10n.dart';
@@ -69,6 +70,11 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               const SizedBox(height: 20),
+              HaveAccountRichText(
+                message: context.tr.alreadyHaveAccount,
+                title: context.tr.signup,
+                onPressed: () {},
+              ),
               RichText(
                 text: TextSpan(
                   text: context.tr.alreadyHaveAccount.toUpperCase(),

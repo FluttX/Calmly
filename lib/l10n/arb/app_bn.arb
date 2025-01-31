@@ -1,5 +1,7 @@
 {
     "@@locale": "bn",
+    "onboardingTitle": "আমরা যা করি, তাই আমরা",
+    "onboardingSubtitle": "হাজারো মানুষ ছোট ছোট ধ্যানের জন্য সাইলেন্ট মুন ব্যবহার করছে",
     "login": "লগইন করুন",
     "welcomeBack": "ফিরে আসার জন্য স্বাগতম!",
     "continueWithGoogle": "গুগলের মাধ্যমে চালিয়ে যান",

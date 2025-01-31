@@ -1,5 +1,7 @@
 {
     "@@locale": "en",
+    "onboardingTitle": "We are what we do",
+    "onboardingSubtitle": "Thousand of people are using silent moon for smalls meditation",
     "login": "LOG IN",
     "welcomeBack": "Welcome Back!",
     "continueWithGoogle": "CONTINUE WITH GOOGLE",

@@ -13,6 +13,7 @@ dependencies:
   flutter_bloc: ^9.0.0
   flutter_localizations:
     sdk: flutter
+  flutter_svg: ^2.0.17
   intl: ^0.19.0
 
 dev_dependencies:
@@ -26,6 +27,8 @@ flutter:
   uses-material-design: true
   generate: true
 
+  assets:
+    - assets/images/onboarding/
 
   fonts:
     - family: HelveticaNeue
