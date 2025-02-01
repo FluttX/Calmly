@@ -35,11 +35,13 @@ class _LoginFormState extends State<LoginForm> {
         AppTextFormField(
           controller: emailController,
           hintText: context.tr.emailAddress,
+          keyboardType: TextInputType.emailAddress,
         ),
         const SizedBox(height: 20),
         AppTextFormField(
           controller: passwordController,
           hintText: context.tr.password,
+          keyboardType: TextInputType.visiblePassword,
           obscureText: obscureText,
           suffixIcon: IconButton(
             onPressed: () {

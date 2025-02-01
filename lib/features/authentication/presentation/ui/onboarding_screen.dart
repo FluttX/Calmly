@@ -15,9 +15,7 @@ class OnBoardingScreen extends StatelessWidget {
             const Expanded(child: OnboardingTopImage()),
             Flexible(
               child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 20,
-                ),
+                padding: const EdgeInsets.symmetric(vertical: 20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
