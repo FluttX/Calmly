@@ -12,5 +12,11 @@
     "forgetPassword": "পাসওয়ার্ড ভুলে গেছেন?",
     "alreadyHaveAccount": "ইতিমধ্যেই একটি অ্যাকাউন্ট আছে?",
     "donNotHaveAccount": "আপনার কি অ্যাকাউন্ট নেই?",
+    "createYourAccount": "আপনার অ্যাকাউন্ট তৈরি করুন",
+    "orSignupWithEmail": "অথবা ইমেইল দিয়ে সাইন আপ করুন",
+    "name": "নাম",
+    "iHaveReadThe": "আমি পড়েছি",
+    "privacyPolicy": "গোপনীয়তা নীতি",
+    "getStarted": "শুরু করুন",
     "signup": "নিবন্ধন করুন"
 }

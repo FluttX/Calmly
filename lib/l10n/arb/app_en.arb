@@ -6,11 +6,17 @@
     "welcomeBack": "Welcome Back!",
     "continueWithGoogle": "CONTINUE WITH GOOGLE",
     "continueWithFacebook": "CONTINUE WITH FACEBOOK",
-    "orLoginWithEmail": "or login with email",
+    "orLoginWithEmail": "or log in with email",
     "emailAddress": "Email address",
     "password": "Password",
     "forgetPassword": "Forget Password?",
     "alreadyHaveAccount": "Already have an account?",
     "donNotHaveAccount": "Don't have an account?",
+    "createYourAccount": "Create your account",
+    "orSignupWithEmail": "or sign up with email",
+    "name": "Name",
+    "iHaveReadThe": "I have read the",
+    "privacyPolicy": "Privacy Policy",
+    "getStarted": "Get Started",
     "signup" : "SIGN UP"
 }

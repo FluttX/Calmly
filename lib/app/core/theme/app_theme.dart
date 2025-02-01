@@ -31,6 +31,8 @@ abstract class AppTheme {
 
   TextTheme get textTheme;
 
+  CheckboxThemeData get checkboxThemeData;
+
   FilledButtonThemeData get filledButtonThemeData;
 
   OutlinedButtonThemeData get outlinedButtonThemeData;

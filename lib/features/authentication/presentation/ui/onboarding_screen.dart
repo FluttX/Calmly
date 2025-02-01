@@ -33,9 +33,9 @@ class OnBoardingScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    HaveAccountRichText(
-                      message: context.tr.alreadyHaveAccount,
-                      title: context.tr.login,
+                    TwoTextRichText(
+                      staticText: context.tr.alreadyHaveAccount.toUpperCase(),
+                      actionText: context.tr.login.toUpperCase(),
                       onPressed: () {},
                     ),
                   ],

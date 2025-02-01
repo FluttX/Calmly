@@ -12,5 +12,11 @@
     "forgetPassword": "¿Olvidaste tu contraseña?",
     "alreadyHaveAccount": "¿Ya tienes una cuenta?",
     "donNotHaveAccount": "¿No tienes una cuenta?",
+    "createYourAccount": "Crea tu cuenta",
+    "orSignupWithEmail": "o regístrate con el correo electrónico",
+    "name": "Nombre",
+    "iHaveReadThe": "He leído la",
+    "privacyPolicy": "Política de privacidad",
+    "getStarted": "Comenzar",
     "signup": "REGISTRARSE"
 }

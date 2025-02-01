@@ -23,6 +23,26 @@ class LightTheme extends AppTheme {
       );
 
   @override
+  CheckboxThemeData get checkboxThemeData => CheckboxThemeData(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
+        fillColor: WidgetStateProperty.resolveWith((states) {
+          if (states.contains(WidgetState.selected)) {
+            return color.primaryColor;
+          }
+          return Colors.transparent;
+        }),
+        checkColor: WidgetStateProperty.all(color.surface),
+        side: WidgetStateBorderSide.resolveWith(
+          (states) {
+            if (states.contains(WidgetState.selected)) {
+              return BorderSide.none;
+            }
+            return BorderSide(color: color.textSecondary, width: 2);
+          },
+        ),
+      );
+
+  @override
   FilledButtonThemeData get filledButtonThemeData => FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: color.primaryColor,
@@ -102,6 +122,7 @@ class LightTheme extends AppTheme {
         useMaterial3: true,
         scaffoldBackgroundColor: color.background,
         appBarTheme: AppBarTheme(backgroundColor: color.background),
+        checkboxTheme: checkboxThemeData,
         filledButtonTheme: filledButtonThemeData,
         outlinedButtonTheme: outlinedButtonThemeData,
         inputDecorationTheme: inputDecorationTheme,
