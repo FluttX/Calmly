@@ -61,11 +61,14 @@ class ChooseTopicScreen extends StatelessWidget {
                     Expanded(
                       child: BlocBuilder<TopicBloc, TopicState>(
                         builder: (context, state) {
+                          // LOADING
                           if (state is TopicLoading) {
                             return const Center(
                               child: CircularProgressIndicator(),
                             );
-                          } else if (state is TopicLoaded) {
+                          }
+                          // TOPICS GRIDVIEW
+                          else if (state is TopicLoaded) {
                             return TopicGirdView(topics: state.topics);
                           }
 
@@ -76,7 +79,7 @@ class ChooseTopicScreen extends StatelessWidget {
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
