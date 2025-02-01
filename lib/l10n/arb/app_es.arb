@@ -11,5 +11,6 @@
     "password": "Contraseña",
     "forgetPassword": "¿Olvidaste tu contraseña?",
     "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "donNotHaveAccount": "¿No tienes una cuenta?",
     "signup": "REGISTRARSE"
 }

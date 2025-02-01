@@ -28,6 +28,7 @@ flutter:
   generate: true
 
   assets:
+    - assets/images/login/
     - assets/images/onboarding/
 
   fonts:

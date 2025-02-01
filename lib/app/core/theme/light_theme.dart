@@ -50,8 +50,6 @@ class LightTheme extends AppTheme {
           fixedSize: const Size(double.infinity, 60),
           textStyle: textTheme.labelLarge?.copyWith(
             color: color.textPrimary,
-            fontSize: 14,
-            fontWeight: FontWeight.w500,
           ),
           padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
@@ -143,4 +141,7 @@ class LightColor extends AppColor {
 
   @override
   Color get textInverseSecondary => const Color(0xFFEBEAEC);
+
+  @override
+  Color get socialButton => const Color(0xFF7583CA);
 }

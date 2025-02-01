@@ -22,6 +22,8 @@ abstract class AppColor {
   Color get textInverseSecondary;
 
   Color get background;
+
+  Color get socialButton;
 }
 
 abstract class AppTheme {

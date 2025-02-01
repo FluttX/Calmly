@@ -5,14 +5,14 @@ class AppTextFormField extends StatelessWidget {
     required this.hintText,
     required this.controller,
     this.obscureText = false,
-    this.suffix,
+    this.suffixIcon,
     super.key,
   });
 
   final bool obscureText;
   final String hintText;
   final TextEditingController controller;
-  final Widget? suffix;
+  final Widget? suffixIcon;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class AppTextFormField extends StatelessWidget {
       obscureText: obscureText,
       decoration: InputDecoration(
         hintText: hintText,
-        suffix: suffix,
+        suffixIcon: suffixIcon,
       ),
     );
   }
