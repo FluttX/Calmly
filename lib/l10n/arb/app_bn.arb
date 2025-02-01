@@ -18,5 +18,8 @@
     "iHaveReadThe": "আমি পড়েছি",
     "privacyPolicy": "গোপনীয়তা নীতি",
     "getStarted": "শুরু করুন",
-    "signup": "নিবন্ধন করুন"
+    "signup": "নিবন্ধন করুন",
+    "hiUser": "হাই {name},",
+    "welComeToAppName": "{app_name} এ স্বাগতম",
+    "welcomeSubtitle": "অ্যাপটি অন্বেষণ করুন, ধ্যানের জন্য প্রস্তুত হতে মানসিক শান্তি খুঁজুন।"
 }

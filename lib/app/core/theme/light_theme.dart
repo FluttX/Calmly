@@ -51,7 +51,7 @@ class LightTheme extends AppTheme {
           ),
           fixedSize: const Size(double.infinity, 60),
           textStyle: textTheme.labelLarge?.copyWith(
-            color: color.textInversePrimary,
+            color: color.white,
           ),
           padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
@@ -64,7 +64,7 @@ class LightTheme extends AppTheme {
           backgroundColor: color.background,
           foregroundColor: color.textPrimary,
           shape: RoundedRectangleBorder(
-            side: BorderSide(color: color.textInversePrimary),
+            side: BorderSide(color: color.white),
             borderRadius: BorderRadius.circular(15),
           ),
           fixedSize: const Size(double.infinity, 60),
@@ -137,7 +137,10 @@ class LightColor extends AppColor {
   Color get primaryColor => const Color(0xFF8E97FD);
 
   @override
-  Color get secondaryColor => const Color(0xFF8E97FD);
+  Color get secondaryColor => const Color(0xFF3F414E);
+
+  @override
+  Color get tertiaryColor => const Color(0xFFEBEAEC);
 
   @override
   Color get surface => const Color(0xFFF2F3F7);
@@ -158,10 +161,10 @@ class LightColor extends AppColor {
   Color get textSecondary => const Color(0xFFA1A4B2);
 
   @override
-  Color get textInversePrimary => const Color(0xFFFFFFFF);
+  Color get textTertiary => const Color(0xFFFFECCC);
 
   @override
-  Color get textInverseSecondary => const Color(0xFFEBEAEC);
+  Color get white => const Color(0xFFFFFFFF);
 
   @override
   Color get socialButton => const Color(0xFF7583CA);

@@ -11,4 +11,7 @@ class AppImages {
   static const icBackRounded = '$_imageUrl/login/ic_back_rounded.svg';
   static const icFacebook = '$_imageUrl/login/ic_facebook.svg';
   static const icGoogle = '$_imageUrl/login/ic_google.svg';
+
+  static const welcomeAppLogo = '$_imageUrl/welcome/welcome_app_logo.svg';
+  static const welcomeBackground = '$_imageUrl/welcome/welcome_background.svg';
 }

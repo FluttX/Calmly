@@ -55,7 +55,7 @@ class AppTextStyle {
 
   static const TextStyle bodyMedium = TextStyle(
     fontSize: 14,
-    fontWeight: FontWeight.w400,
+    fontWeight: FontWeight.w300,
     color: _textSecondaryColor,
     fontFamily: 'HelveticaNeue',
   );

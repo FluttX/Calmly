@@ -5,6 +5,8 @@ abstract class AppColor {
 
   Color get secondaryColor;
 
+  Color get tertiaryColor;
+
   Color get success;
 
   Color get warning;
@@ -17,9 +19,9 @@ abstract class AppColor {
 
   Color get textSecondary;
 
-  Color get textInversePrimary;
+  Color get textTertiary;
 
-  Color get textInverseSecondary;
+  Color get white;
 
   Color get background;
 

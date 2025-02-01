@@ -12,7 +12,7 @@ class App extends StatelessWidget {
       theme: LightTheme().theme,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const SignupScreen(),
+      home: const WelcomeScreen(),
     );
   }
 }

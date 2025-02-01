@@ -30,6 +30,7 @@ flutter:
   assets:
     - assets/images/login/
     - assets/images/onboarding/
+    - assets/images/welcome/
 
   fonts:
     - family: HelveticaNeue
