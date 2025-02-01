@@ -21,5 +21,8 @@
     "signup" : "SIGN UP",
     "hiUser" : "Hi {name},",
     "welComeToAppName" : "Welcome to {app_name}",
-    "welcomeSubtitle" : "Explore the app, Find some peace of mind to prepare for meditation."
+    "welcomeSubtitle" : "Explore the app, Find some peace of mind to prepare for meditation.",
+    "whatBringsYou" : "What Brings you",
+    "toAppName" : "to {app_name}?",
+    "chooseATopic" : "choose a topic to focus on:"
 }

@@ -14,4 +14,13 @@ class AppImages {
 
   static const welcomeAppLogo = '$_imageUrl/welcome/welcome_app_logo.svg';
   static const welcomeBackground = '$_imageUrl/welcome/welcome_background.svg';
+
+  static const betterSleep = '$_imageUrl/topic/better_sleep.svg';
+  static const enhanceFocus = '$_imageUrl/topic/enhance_focus.svg';
+  static const improvePerformance = '$_imageUrl/topic/improve_performance.svg';
+  static const increaseHappiness = '$_imageUrl/topic/increase_happiness.svg';
+  static const personalGrowth = '$_imageUrl/topic/personal_growth.svg';
+  static const reduceAnxiety = '$_imageUrl/topic/reduce_anxiety.svg';
+  static const reduceStress = '$_imageUrl/topic/reduce_stress.svg';
+  static const topicBackground = '$_imageUrl/topic/topic_background.svg';
 }

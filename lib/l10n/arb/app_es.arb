@@ -21,5 +21,8 @@
     "signup": "REGISTRARSE",
     "hiUser": "Hola {name},",
     "welComeToAppName": "Bienvenido a {app_name}",
-    "welcomeSubtitle": "Explora la aplicación, encuentra un poco de paz mental para prepararte para la meditación."
+    "welcomeSubtitle": "Explora la aplicación, encuentra un poco de paz mental para prepararte para la meditación.",
+    "whatBringsYou": "¿Qué te trae",
+    "toAppName": "a {app_name}?",
+    "chooseATopic": "elige un tema en el que concentrarte:"
 }
