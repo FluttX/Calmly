@@ -35,7 +35,7 @@ class AppRouterConfig {
       path: AppRoute.chooseTopic,
       name: AppRoute.chooseTopic,
       builder: (_, __) => BlocProvider(
-        create: (context) => TopicBloc(inject()),
+        create: (context) => TopicBloc(inject())..add(FetchTopicsEvent()),
         child: const ChooseTopicScreen(),
       ),
     ),

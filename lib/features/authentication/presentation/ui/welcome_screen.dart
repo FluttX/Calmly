@@ -1,8 +1,10 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/core/theme/theme.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -56,7 +58,7 @@ class WelcomeScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: FilledButton(
-                      onPressed: () {},
+                      onPressed: () => context.push(AppRoute.chooseTopic),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: context.theme.color.tertiaryColor,
                         foregroundColor: context.theme.color.textPrimary,

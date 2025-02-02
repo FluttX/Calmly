@@ -1,3 +1,4 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/common/common.dart';
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/core/theme/theme.dart';
@@ -5,6 +6,7 @@ import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -53,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   TwoTextRichText(
                     staticText: context.tr.donNotHaveAccount.toUpperCase(),
                     actionText: context.tr.signup.toUpperCase(),
-                    onPressed: () {},
+                    onPressed: () => context.push(AppRoute.signup),
                   ),
                   const SizedBox(height: 20),
                 ],

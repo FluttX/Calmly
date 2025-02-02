@@ -1,7 +1,9 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/common/common.dart';
 import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
@@ -28,7 +30,7 @@ class OnBoardingScreen extends StatelessWidget {
                       width: double.infinity,
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: FilledButton(
-                        onPressed: () {},
+                        onPressed: () => context.push(AppRoute.signup),
                         child: Text(context.tr.signup),
                       ),
                     ),
@@ -36,7 +38,7 @@ class OnBoardingScreen extends StatelessWidget {
                     TwoTextRichText(
                       staticText: context.tr.alreadyHaveAccount.toUpperCase(),
                       actionText: context.tr.login.toUpperCase(),
-                      onPressed: () {},
+                      onPressed: () => context.push(AppRoute.login),
                     ),
                   ],
                 ),
