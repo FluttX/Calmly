@@ -1,5 +1,4 @@
-import 'package:calmly/features/authentication/domain/entities/topic_data.dart';
-import 'package:calmly/features/authentication/domain/repository/topic_repository.dart';
+import 'package:calmly/features/authentication/authentication.dart';
 
 class GetTopicUsecase {
   GetTopicUsecase({required TopicRepository repository})

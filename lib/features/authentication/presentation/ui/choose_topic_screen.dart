@@ -1,10 +1,6 @@
-import 'package:calmly/app/core/constants/constants.dart';
-import 'package:calmly/app/core/theme/theme.dart';
+import 'package:calmly/core/constants/constants.dart';
+import 'package:calmly/core/theme/theme.dart';
 import 'package:calmly/features/authentication/authentication.dart';
-import 'package:calmly/features/authentication/data/datasource/remote/topic_remote_datasource.dart';
-import 'package:calmly/features/authentication/data/repository/topic_repository_impl.dart';
-import 'package:calmly/features/authentication/domain/usecase/get_topics_usecase.dart';
-import 'package:calmly/features/authentication/presentation/bloc/topic_bloc.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

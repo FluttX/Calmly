@@ -1,6 +1,6 @@
-import 'package:calmly/app/core/common/common.dart';
-import 'package:calmly/app/core/constants/constants.dart';
-import 'package:calmly/app/core/theme/theme.dart';
+import 'package:calmly/core/common/common.dart';
+import 'package:calmly/core/constants/constants.dart';
+import 'package:calmly/core/theme/theme.dart';
 import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';

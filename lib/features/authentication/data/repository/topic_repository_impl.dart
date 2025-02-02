@@ -1,6 +1,4 @@
-import 'package:calmly/features/authentication/data/datasource/remote/topic_remote_datasource.dart';
-import 'package:calmly/features/authentication/domain/entities/topic_data.dart';
-import 'package:calmly/features/authentication/domain/repository/topic_repository.dart';
+import 'package:calmly/features/authentication/authentication.dart';
 import 'package:injectable/injectable.dart';
 
 @Singleton(as: TopicRepository)

@@ -1,4 +1,4 @@
-import 'package:calmly/app/core/theme/theme.dart';
+import 'package:calmly/core/theme/theme.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 

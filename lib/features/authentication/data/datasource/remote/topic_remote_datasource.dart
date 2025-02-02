@@ -1,5 +1,5 @@
-import 'package:calmly/app/core/constants/constants.dart';
-import 'package:calmly/features/authentication/data/model/topic_response.dart';
+import 'package:calmly/core/constants/constants.dart';
+import 'package:calmly/features/authentication/authentication.dart';
 
 class TopicRemoteDataSource {
   final List<Map<String, dynamic>> _jsonData = [

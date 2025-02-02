@@ -1,7 +1,6 @@
 import 'dart:async';
 
-import 'package:calmly/features/authentication/domain/entities/topic_data.dart';
-import 'package:calmly/features/authentication/domain/usecase/get_topics_usecase.dart';
+import 'package:calmly/features/authentication/authentication.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'topic_event.dart';

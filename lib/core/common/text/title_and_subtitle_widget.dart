@@ -1,4 +1,4 @@
-import 'package:calmly/app/core/theme/theme.dart';
+import 'package:calmly/core/theme/theme.dart';
 import 'package:flutter/cupertino.dart';
 
 class TitleAndSubtitleWidget extends StatelessWidget {

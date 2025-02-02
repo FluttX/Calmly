@@ -1,5 +1,5 @@
-import 'package:calmly/app/core/style/app_text_style.dart';
-import 'package:calmly/app/core/theme/theme.dart';
+import 'package:calmly/core/style/app_text_style.dart';
+import 'package:calmly/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class LightTheme extends AppTheme {

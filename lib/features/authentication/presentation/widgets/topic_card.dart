@@ -1,4 +1,4 @@
-import 'package:calmly/app/core/extensions/extensions.dart';
+import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/authentication/domain/entities/topic_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

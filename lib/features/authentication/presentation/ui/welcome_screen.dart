@@ -1,5 +1,5 @@
-import 'package:calmly/app/core/constants/app_images.dart';
-import 'package:calmly/app/core/theme/theme.dart';
+import 'package:calmly/core/constants/constants.dart';
+import 'package:calmly/core/theme/theme.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';

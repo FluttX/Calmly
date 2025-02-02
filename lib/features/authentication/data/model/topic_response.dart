@@ -1,4 +1,4 @@
-import 'package:calmly/features/authentication/domain/entities/topic_data.dart';
+import 'package:calmly/features/authentication/authentication.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'topic_response.g.dart';
