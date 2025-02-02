@@ -1,6 +1,8 @@
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/features/authentication/authentication.dart';
+import 'package:injectable/injectable.dart';
 
+@singleton
 class TopicRemoteDataSource {
   final List<Map<String, dynamic>> _jsonData = [
     {

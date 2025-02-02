@@ -1,5 +1,5 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/theme/light_theme.dart';
-import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -8,11 +8,11 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       theme: LightTheme().theme,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const ChooseTopicScreen(),
+      routerConfig: AppRouterConfig().router,
     );
   }
 }

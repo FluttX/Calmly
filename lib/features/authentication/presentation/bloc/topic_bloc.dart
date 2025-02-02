@@ -7,9 +7,7 @@ part 'topic_event.dart';
 part 'topic_state.dart';
 
 class TopicBloc extends Bloc<TopicEvent, TopicState> {
-  TopicBloc({required GetTopicUsecase topicUsecase})
-      : _topicUsecase = topicUsecase,
-        super(TopicInitial()) {
+  TopicBloc(this._topicUsecase) : super(TopicInitial()) {
     on<FetchTopicsEvent>(_onFetchTopicsEvent);
   }
 
