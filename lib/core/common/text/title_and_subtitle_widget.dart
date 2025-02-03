@@ -1,4 +1,4 @@
-import 'package:calmly/core/theme/theme.dart';
+import 'package:calmly/core/extensions/extensions.dart';
 import 'package:flutter/cupertino.dart';
 
 class TitleAndSubtitleWidget extends StatelessWidget {
@@ -21,13 +21,13 @@ class TitleAndSubtitleWidget extends StatelessWidget {
         children: [
           Text(
             title,
-            style: context.theme.textTheme.headlineSmall,
+            style: context.textTheme.headlineSmall,
           ),
           const SizedBox(height: 15),
           Text(
             subtitle,
             textAlign: TextAlign.center,
-            style: context.theme.textTheme.bodyMedium,
+            style: context.textTheme.bodyMedium,
           ),
         ],
       ),

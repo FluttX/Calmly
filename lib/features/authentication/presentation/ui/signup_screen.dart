@@ -1,6 +1,6 @@
 import 'package:calmly/core/common/common.dart';
 import 'package:calmly/core/constants/constants.dart';
-import 'package:calmly/core/theme/theme.dart';
+import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +32,7 @@ class SignupScreen extends StatelessWidget {
                           const SizedBox(height: 30),
                           Text(
                             context.tr.createYourAccount,
-                            style: context.theme.textTheme.headlineSmall,
+                            style: context.textTheme.headlineSmall,
                           ),
                           const SizedBox(height: 30),
                           const SocialLoginButton(),

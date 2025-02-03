@@ -35,7 +35,7 @@ class TopicCard extends StatelessWidget {
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 textAlign: TextAlign.start,
-                style: context.theme.textTheme.titleMedium
+                style: context.textTheme.titleMedium
                     ?.copyWith(color: HexColor.formHex(topic.textColor)),
               ),
             ),

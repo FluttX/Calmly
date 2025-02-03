@@ -1,4 +1,4 @@
-import 'package:calmly/core/theme/theme.dart';
+import 'package:calmly/core/extensions/extensions.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -19,13 +19,13 @@ class TwoTextRichText extends StatelessWidget {
     return RichText(
       text: TextSpan(
         text: staticText,
-        style: context.theme.textTheme.bodySmall,
+        style: context.textTheme.bodySmall,
         children: [
           const TextSpan(text: ' '),
           TextSpan(
             text: actionText,
-            style: context.theme.textTheme.bodySmall
-                ?.copyWith(color: context.theme.color.primaryColor),
+            style: context.textTheme.bodySmall
+                ?.copyWith(color: context.colors.primaryColor),
             recognizer: TapGestureRecognizer()..onTap = onPressed,
           ),
         ],

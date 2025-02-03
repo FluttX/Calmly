@@ -1,5 +1,5 @@
 import 'package:calmly/core/constants/constants.dart';
-import 'package:calmly/core/theme/theme.dart';
+import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
@@ -31,19 +31,19 @@ class ChooseTopicScreen extends StatelessWidget {
                   const SizedBox(height: 30),
                   Text(
                     context.tr.whatBringsYou,
-                    style: context.theme.textTheme.headlineSmall,
+                    style: context.textTheme.headlineSmall,
                   ),
                   Text(
                     context.tr.toAppName('Silent Moon'),
-                    style: context.theme.textTheme.headlineSmall
+                    style: context.textTheme.headlineSmall
                         ?.copyWith(fontWeight: FontWeight.w300),
                   ),
                   const SizedBox(height: 10),
                   Text(
                     context.tr.chooseATopic,
-                    style: context.theme.textTheme.bodyLarge?.copyWith(
+                    style: context.textTheme.bodyLarge?.copyWith(
                       fontWeight: FontWeight.w300,
-                      color: context.theme.color.textSecondary,
+                      color: context.colors.textSecondary,
                     ),
                   ),
                   Expanded(

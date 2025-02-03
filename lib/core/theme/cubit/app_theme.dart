@@ -1,6 +1,22 @@
 import 'package:flutter/material.dart';
 
-abstract class AppColor {
+abstract class AppTheme {
+  AppColors get colors;
+
+  TextTheme get textTheme;
+
+  CheckboxThemeData get checkboxThemeData;
+
+  FilledButtonThemeData get filledButtonThemeData;
+
+  OutlinedButtonThemeData get outlinedButtonThemeData;
+
+  InputDecorationTheme get inputDecorationTheme;
+
+  ThemeData get theme;
+}
+
+abstract class AppColors {
   Color get primaryColor;
 
   Color get secondaryColor;
@@ -26,20 +42,4 @@ abstract class AppColor {
   Color get background;
 
   Color get socialButton;
-}
-
-abstract class AppTheme {
-  AppColor get color;
-
-  TextTheme get textTheme;
-
-  CheckboxThemeData get checkboxThemeData;
-
-  FilledButtonThemeData get filledButtonThemeData;
-
-  OutlinedButtonThemeData get outlinedButtonThemeData;
-
-  InputDecorationTheme get inputDecorationTheme;
-
-  ThemeData get theme;
 }

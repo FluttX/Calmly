@@ -1,4 +1,4 @@
-import 'package:calmly/core/theme/theme.dart';
+import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +29,7 @@ class _LoginFormState extends State<LoginForm> {
       children: [
         Text(
           context.tr.orLoginWithEmail.toUpperCase(),
-          style: context.theme.textTheme.bodyMedium,
+          style: context.textTheme.bodyMedium,
         ),
         const SizedBox(height: 40),
         AppTextFormField(
@@ -52,7 +52,7 @@ class _LoginFormState extends State<LoginForm> {
             icon: Icon(
               obscureText ? Icons.visibility_off : Icons.visibility,
               size: 20,
-              color: context.theme.color.textSecondary,
+              color: context.colors.textSecondary,
             ),
           ),
         ),

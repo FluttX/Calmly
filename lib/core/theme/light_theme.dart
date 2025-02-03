@@ -1,25 +1,84 @@
-import 'package:calmly/core/style/app_text_style.dart';
 import 'package:calmly/core/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 class LightTheme extends AppTheme {
   @override
-  AppColor get color => LightColor();
+  AppColors get colors => LightColor();
 
   @override
-  TextTheme get textTheme => const TextTheme(
-        headlineLarge: AppTextStyle.headlineLarge,
-        headlineMedium: AppTextStyle.headlineMedium,
-        headlineSmall: AppTextStyle.headlineSmall,
-        titleLarge: AppTextStyle.subtitleLarge,
-        titleMedium: AppTextStyle.subtitleMedium,
-        titleSmall: AppTextStyle.subtitleSmall,
-        bodyLarge: AppTextStyle.bodyLarge,
-        bodyMedium: AppTextStyle.bodyMedium,
-        bodySmall: AppTextStyle.bodySmall,
-        labelLarge: AppTextStyle.button,
-        labelMedium: AppTextStyle.caption,
-        labelSmall: AppTextStyle.overLine,
+  TextTheme get textTheme => TextTheme(
+        headlineLarge: TextStyle(
+          fontSize: 48,
+          fontWeight: FontWeight.w700,
+          color: colors.textPrimary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        headlineMedium: TextStyle(
+          fontSize: 36,
+          fontWeight: FontWeight.w700,
+          color: colors.textPrimary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        headlineSmall: TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.w700,
+          color: colors.textPrimary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        titleLarge: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.w600,
+          color: colors.textPrimary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        titleMedium: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w600,
+          color: colors.textPrimary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        titleSmall: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w600,
+          color: colors.textPrimary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        bodyLarge: TextStyle(
+          fontSize: 16,
+          fontWeight: FontWeight.w400,
+          color: colors.textPrimary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.w300,
+          color: colors.textSecondary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        bodySmall: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w400,
+          color: colors.textSecondary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        labelLarge: TextStyle(
+          fontSize: 14,
+          fontWeight: FontWeight.w500,
+          color: colors.textSecondary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        labelMedium: TextStyle(
+          fontSize: 12,
+          fontWeight: FontWeight.w300,
+          color: colors.textSecondary,
+          fontFamily: 'HelveticaNeue',
+        ),
+        labelSmall: TextStyle(
+          fontSize: 10,
+          fontWeight: FontWeight.w300,
+          color: colors.textSecondary,
+          fontFamily: 'HelveticaNeue',
+        ),
       );
 
   @override
@@ -27,17 +86,17 @@ class LightTheme extends AppTheme {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
         fillColor: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            return color.primaryColor;
+            return colors.primaryColor;
           }
           return Colors.transparent;
         }),
-        checkColor: WidgetStateProperty.all(color.surface),
+        checkColor: WidgetStateProperty.all(colors.surface),
         side: WidgetStateBorderSide.resolveWith(
           (states) {
             if (states.contains(WidgetState.selected)) {
               return BorderSide.none;
             }
-            return BorderSide(color: color.textSecondary, width: 2);
+            return BorderSide(color: colors.textSecondary, width: 2);
           },
         ),
       );
@@ -45,13 +104,13 @@ class LightTheme extends AppTheme {
   @override
   FilledButtonThemeData get filledButtonThemeData => FilledButtonThemeData(
         style: FilledButton.styleFrom(
-          backgroundColor: color.primaryColor,
+          backgroundColor: colors.primaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
           fixedSize: const Size(double.infinity, 60),
           textStyle: textTheme.labelLarge?.copyWith(
-            color: color.white,
+            color: colors.white,
           ),
           padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
@@ -61,15 +120,15 @@ class LightTheme extends AppTheme {
   OutlinedButtonThemeData get outlinedButtonThemeData =>
       OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          backgroundColor: color.background,
-          foregroundColor: color.textPrimary,
+          backgroundColor: colors.background,
+          foregroundColor: colors.textPrimary,
           shape: RoundedRectangleBorder(
-            side: BorderSide(color: color.white),
+            side: BorderSide(color: colors.white),
             borderRadius: BorderRadius.circular(15),
           ),
           fixedSize: const Size(double.infinity, 60),
           textStyle: textTheme.labelLarge?.copyWith(
-            color: color.textPrimary,
+            color: colors.textPrimary,
           ),
           padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
         ),
@@ -78,7 +137,7 @@ class LightTheme extends AppTheme {
   @override
   InputDecorationTheme get inputDecorationTheme => InputDecorationTheme(
         filled: true,
-        fillColor: color.surface, // Background color
+        fillColor: colors.surface, // Background color
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
           borderSide: BorderSide.none,
@@ -89,39 +148,39 @@ class LightTheme extends AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: color.primaryColor, width: 2),
+          borderSide: BorderSide(color: colors.primaryColor, width: 2),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: color.error, width: 2),
+          borderSide: BorderSide(color: colors.error, width: 2),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: color.error, width: 2),
+          borderSide: BorderSide(color: colors.error, width: 2),
         ),
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: color.textSecondary.withOpacity(0.5)),
+          borderSide: BorderSide(color: colors.textSecondary.withOpacity(0.5)),
         ),
         contentPadding: const EdgeInsets.symmetric(
           horizontal: 16,
           vertical: 18,
         ),
-        hintStyle: textTheme.bodyMedium?.copyWith(color: color.textSecondary),
-        labelStyle: textTheme.bodyLarge?.copyWith(color: color.textPrimary),
+        hintStyle: textTheme.bodyMedium?.copyWith(color: colors.textSecondary),
+        labelStyle: textTheme.bodyLarge?.copyWith(color: colors.textPrimary),
         floatingLabelStyle: textTheme.bodyLarge
-            ?.copyWith(color: color.primaryColor, fontWeight: FontWeight.w600),
-        helperStyle: textTheme.bodySmall?.copyWith(color: color.textSecondary),
-        errorStyle: textTheme.bodySmall?.copyWith(color: color.error),
-        prefixStyle: textTheme.bodyLarge?.copyWith(color: color.textPrimary),
-        suffixStyle: textTheme.bodyLarge?.copyWith(color: color.textPrimary),
+            ?.copyWith(color: colors.primaryColor, fontWeight: FontWeight.w600),
+        helperStyle: textTheme.bodySmall?.copyWith(color: colors.textSecondary),
+        errorStyle: textTheme.bodySmall?.copyWith(color: colors.error),
+        prefixStyle: textTheme.bodyLarge?.copyWith(color: colors.textPrimary),
+        suffixStyle: textTheme.bodyLarge?.copyWith(color: colors.textPrimary),
       );
 
   @override
   ThemeData get theme => ThemeData(
         useMaterial3: true,
-        scaffoldBackgroundColor: color.background,
-        appBarTheme: AppBarTheme(backgroundColor: color.background),
+        scaffoldBackgroundColor: colors.background,
+        appBarTheme: AppBarTheme(backgroundColor: colors.background),
         checkboxTheme: checkboxThemeData,
         filledButtonTheme: filledButtonThemeData,
         outlinedButtonTheme: outlinedButtonThemeData,
@@ -129,7 +188,7 @@ class LightTheme extends AppTheme {
       );
 }
 
-class LightColor extends AppColor {
+class LightColor extends AppColors {
   @override
   Color get background => const Color(0xFFFFFFFF);
 

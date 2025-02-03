@@ -5,12 +5,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouterConfig {
-  late final GoRouter router = GoRouter(
+  static final GoRouter router = GoRouter(
     routes: _routes,
     initialLocation: AppRoute.root,
   );
 
-  late final _routes = <RouteBase>[
+  static final _routes = <RouteBase>[
     GoRoute(
       path: AppRoute.root,
       name: AppRoute.root,

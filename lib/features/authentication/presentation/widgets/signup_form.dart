@@ -1,6 +1,6 @@
 import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/common/common.dart';
-import 'package:calmly/core/theme/theme.dart';
+import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +34,7 @@ class _SignupFormState extends State<SignupForm> {
       children: [
         Text(
           context.tr.orSignupWithEmail.toUpperCase(),
-          style: context.theme.textTheme.bodyMedium,
+          style: context.textTheme.bodyMedium,
         ),
         const SizedBox(height: 40),
         AppTextFormField(
@@ -63,7 +63,7 @@ class _SignupFormState extends State<SignupForm> {
             icon: Icon(
               obscureText ? Icons.visibility_off : Icons.visibility,
               size: 20,
-              color: context.theme.color.textSecondary,
+              color: context.colors.textSecondary,
             ),
           ),
         ),
