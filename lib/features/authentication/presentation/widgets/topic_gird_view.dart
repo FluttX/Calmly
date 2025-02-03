@@ -1,6 +1,5 @@
 import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/authentication/authentication.dart';
-import 'package:calmly/features/authentication/domain/entities/topic_data.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
@@ -15,6 +14,8 @@ class TopicGirdView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MasonryGridView.count(
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       mainAxisSpacing: 12,
       crossAxisSpacing: 12,

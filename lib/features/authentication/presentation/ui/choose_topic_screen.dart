@@ -23,7 +23,7 @@ class ChooseTopicScreen extends StatelessWidget {
             ),
           ),
           SafeArea(
-            child: Padding(
+            child: SingleChildScrollView(
               padding: const EdgeInsets.symmetric(horizontal: 20),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,23 +46,24 @@ class ChooseTopicScreen extends StatelessWidget {
                       color: context.colors.textSecondary,
                     ),
                   ),
-                  Expanded(
-                    child: BlocBuilder<TopicBloc, TopicState>(
-                      builder: (context, state) {
-                        // LOADING
-                        if (state is TopicLoading) {
-                          return const Center(
-                            child: CircularProgressIndicator(),
-                          );
-                        }
-                        // TOPICS GRIDVIEW
-                        else if (state is TopicLoaded) {
-                          return TopicGirdView(topics: state.topics);
-                        }
+                  BlocBuilder<TopicBloc, TopicState>(
+                    builder: (context, state) {
+                      // LOADING
+                      if (state is TopicLoading) {
+                        return const Column(
+                          children: [
+                            SizedBox(height: 150),
+                            Center(child: CircularProgressIndicator.adaptive()),
+                          ],
+                        );
+                      }
+                      // TOPICS GRIDVIEW
+                      else if (state is TopicLoaded) {
+                        return TopicGirdView(topics: state.topics);
+                      }
 
-                        return const SizedBox();
-                      },
-                    ),
+                      return const SizedBox();
+                    },
                   ),
                 ],
               ),
