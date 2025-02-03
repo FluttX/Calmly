@@ -1,15 +1,15 @@
 import 'package:calmly/core/theme/theme.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class ThemeCubit extends Cubit<AppTheme> {
-  ThemeCubit() : super(LightTheme()) {
+  ThemeCubit(this._themeRepository) : super(LightTheme()) {
     _loadSavedTheme();
   }
 
+  final ThemeRepository _themeRepository;
+
   Future<void> _loadSavedTheme() async {
-    final preference = await SharedPreferences.getInstance();
-    final theme = preference.getString('theme');
+    final theme = _themeRepository.getSavedTheme();
 
     if (theme == null || theme.isEmpty) return;
 
@@ -24,8 +24,7 @@ class ThemeCubit extends Cubit<AppTheme> {
   }
 
   Future<void> changeTheme(AppTheme theme) async {
-    final preference = await SharedPreferences.getInstance();
-    await preference.setString('theme', theme.runtimeType.toString());
+    await _themeRepository.saveTheme(theme.runtimeType.toString());
     emit(theme);
   }
 }

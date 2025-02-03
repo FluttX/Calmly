@@ -1,4 +1,5 @@
 import 'package:calmly/app/navigation/navigation.dart';
+import 'package:calmly/core/di/inject.dart';
 import 'package:calmly/core/theme/theme.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +11,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (context) => ThemeCubit(),
+      create: (context) => ThemeCubit(inject()),
       child: BlocBuilder<ThemeCubit, AppTheme>(
         builder: (context, state) {
           return MaterialApp.router(
