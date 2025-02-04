@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 extension ThemeExtension on BuildContext {
   AppColors get colors => read<ThemeCubit>().state.colors;
 
-  TextTheme get textTheme => Theme.of(this).textTheme;
+  TextTheme get textTheme => read<ThemeCubit>().state.textTheme;
 
   void changeTheme(AppTheme theme) {
     read<ThemeCubit>().changeTheme(theme);

@@ -1,7 +1,9 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class TopicCard extends StatelessWidget {
   const TopicCard({required this.height, required this.topic, super.key});
@@ -12,7 +14,7 @@ class TopicCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: () => context.push(AppRoute.remainder),
       child: Container(
         height: height,
         decoration: BoxDecoration(

@@ -40,5 +40,13 @@ class AppRouterConfig {
         child: const ChooseTopicScreen(),
       ),
     ),
+    GoRoute(
+      path: AppRoute.remainder,
+      name: AppRoute.remainder,
+      builder: (_, __) => BlocProvider(
+        create: (context) => DayBloc(inject())..add(LoadDaysEvent()),
+        child: const RemainderScreen(),
+      ),
+    ),
   ];
 }

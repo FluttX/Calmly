@@ -6,5 +6,6 @@ class AppRoute {
   static const signup = '/signup';
   static const welcome = '/welcome';
   static const chooseTopic = '/choose-topic';
+  static const remainder = '/remainder';
   static const main = '/main';
 }

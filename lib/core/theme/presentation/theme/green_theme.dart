@@ -202,7 +202,10 @@ class GreenColor extends AppColors {
   Color get tertiaryColor => const Color(0xFFA5D6A7); // Light Green Accent
 
   @override
-  Color get surface => const Color(0xFFE8F5E9); // Very Light Green Surface
+  Color get surface => const Color(0xFFE8F5E9);
+
+  @override
+  Color get containerSurface => const Color(0xFFF5F5F9);
 
   @override
   Color get error => const Color(0xFFD32F2F);

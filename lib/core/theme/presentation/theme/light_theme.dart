@@ -205,6 +205,9 @@ class LightColor extends AppColors {
   Color get surface => const Color(0xFFF2F3F7);
 
   @override
+  Color get containerSurface => const Color(0xFFF5F5F9);
+
+  @override
   Color get error => const Color(0xFFB00020);
 
   @override

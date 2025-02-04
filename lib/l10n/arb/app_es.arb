@@ -24,5 +24,11 @@
     "welcomeSubtitle": "Explora la aplicación, encuentra un poco de paz mental para prepararte para la meditación.",
     "whatBringsYou": "¿Qué te trae",
     "toAppName": "a {app_name}?",
-    "chooseATopic": "elige un tema en el que concentrarte:"
+    "chooseATopic": "elige un tema en el que concentrarte:",
+    "meditateTimeTitle": "¿A qué hora te gustaría meditar?",
+    "meditateTimeSubtitle": "Puedes elegir cualquier hora, pero recomendamos hacerlo a primera hora de la mañana.",
+    "meditateDayTitle": "¿Qué día te gustaría meditar?",
+    "meditateDaySubtitle": "Lo ideal es todos los días, pero recomendamos al menos cinco.",
+    "save": "GUARDAR",
+    "noThanks": "NO, GRACIAS"
 }

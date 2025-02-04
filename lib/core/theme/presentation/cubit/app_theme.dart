@@ -31,6 +31,8 @@ abstract class AppColors {
 
   Color get surface;
 
+  Color get containerSurface;
+
   Color get textPrimary;
 
   Color get textSecondary;

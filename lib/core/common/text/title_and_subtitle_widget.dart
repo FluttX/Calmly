@@ -5,12 +5,16 @@ class TitleAndSubtitleWidget extends StatelessWidget {
   const TitleAndSubtitleWidget({
     required this.title,
     required this.subtitle,
+    this.titleTextAlign = TextAlign.center,
+    this.subTitleTextAlign = TextAlign.center,
     this.padding = const EdgeInsets.symmetric(horizontal: 50),
     super.key,
   });
 
   final String title;
   final String subtitle;
+  final TextAlign titleTextAlign;
+  final TextAlign subTitleTextAlign;
   final EdgeInsets padding;
 
   @override
@@ -21,12 +25,13 @@ class TitleAndSubtitleWidget extends StatelessWidget {
         children: [
           Text(
             title,
+            textAlign: titleTextAlign,
             style: context.textTheme.headlineSmall,
           ),
           const SizedBox(height: 15),
           Text(
             subtitle,
-            textAlign: TextAlign.center,
+            textAlign: subTitleTextAlign,
             style: context.textTheme.bodyMedium,
           ),
         ],
