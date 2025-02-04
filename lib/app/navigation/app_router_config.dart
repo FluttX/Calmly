@@ -1,6 +1,7 @@
 import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/di/inject.dart';
 import 'package:calmly/features/authentication/authentication.dart';
+import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,7 +15,7 @@ class AppRouterConfig {
     GoRoute(
       path: AppRoute.root,
       name: AppRoute.root,
-      builder: (_, __) => const OnBoardingScreen(),
+      builder: (_, __) => const StartupScreen(),
     ),
     GoRoute(
       path: AppRoute.login,

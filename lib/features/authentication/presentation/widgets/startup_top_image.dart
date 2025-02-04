@@ -2,8 +2,8 @@ import 'package:calmly/core/constants/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class OnboardingTopImage extends StatelessWidget {
-  const OnboardingTopImage({super.key});
+class StartupTopImage extends StatelessWidget {
+  const StartupTopImage({super.key});
 
   @override
   Widget build(BuildContext context) {

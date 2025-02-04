@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:calmly/features/authentication/authentication.dart';
+import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'topic_event.dart';

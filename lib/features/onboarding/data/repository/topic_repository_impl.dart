@@ -1,4 +1,4 @@
-import 'package:calmly/features/authentication/authentication.dart';
+import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:injectable/injectable.dart';
 
 @Singleton(as: TopicRepository)

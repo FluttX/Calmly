@@ -5,8 +5,8 @@ import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-class OnBoardingScreen extends StatelessWidget {
-  const OnBoardingScreen({super.key});
+class StartupScreen extends StatelessWidget {
+  const StartupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,7 +14,7 @@ class OnBoardingScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            const Expanded(child: OnboardingTopImage()),
+            const Expanded(child: StartupTopImage()),
             Flexible(
               child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 20),

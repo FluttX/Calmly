@@ -11,13 +11,13 @@
 import 'package:calmly/core/theme/data/repository/theme_repository_impl.dart'
     as _i549;
 import 'package:calmly/core/theme/theme.dart' as _i352;
-import 'package:calmly/features/authentication/authentication.dart' as _i632;
-import 'package:calmly/features/authentication/data/datasource/remote/topic_remote_datasource.dart'
-    as _i952;
-import 'package:calmly/features/authentication/data/repository/topic_repository_impl.dart'
-    as _i446;
-import 'package:calmly/features/authentication/domain/usecase/get_topics_usecase.dart'
-    as _i323;
+import 'package:calmly/features/onboarding/data/datasource/remote/topic_remote_datasource.dart'
+    as _i673;
+import 'package:calmly/features/onboarding/data/repository/topic_repository_impl.dart'
+    as _i4;
+import 'package:calmly/features/onboarding/domain/usecase/get_topics_usecase.dart'
+    as _i780;
+import 'package:calmly/features/onboarding/onboarding.dart' as _i655;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:hive_flutter/hive_flutter.dart' as _i986;
 import 'package:injectable/injectable.dart' as _i526;
@@ -33,14 +33,14 @@ extension GetItInjectableX on _i174.GetIt {
       environment,
       environmentFilter,
     );
-    gh.singleton<_i952.TopicRemoteDataSource>(
-        () => _i952.TopicRemoteDataSource());
+    gh.singleton<_i673.TopicRemoteDataSource>(
+        () => _i673.TopicRemoteDataSource());
+    gh.singleton<_i655.TopicRepository>(() => _i4.TopicRepositoryImpl(
+        remoteDataSource: gh<_i655.TopicRemoteDataSource>()));
     gh.singleton<_i352.ThemeRepository>(
         () => _i549.ThemeRepositoryImpl(gh<_i986.Box<String>>()));
-    gh.singleton<_i632.TopicRepository>(() => _i446.TopicRepositoryImpl(
-        remoteDataSource: gh<_i632.TopicRemoteDataSource>()));
-    gh.singleton<_i323.GetTopicUsecase>(
-        () => _i323.GetTopicUsecase(repository: gh<_i632.TopicRepository>()));
+    gh.singleton<_i780.GetTopicUsecase>(
+        () => _i780.GetTopicUsecase(repository: gh<_i655.TopicRepository>()));
     return this;
   }
 }

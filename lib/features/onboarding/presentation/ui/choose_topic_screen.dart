@@ -1,6 +1,6 @@
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/core/extensions/extensions.dart';
-import 'package:calmly/features/authentication/authentication.dart';
+import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

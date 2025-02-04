@@ -1,4 +1,4 @@
-import 'package:calmly/features/authentication/authentication.dart';
+import 'package:calmly/features/onboarding/onboarding.dart';
 
 abstract class TopicRepository {
   Future<List<TopicData>> getTopics();

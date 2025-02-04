@@ -1,5 +1,5 @@
 import 'package:calmly/core/extensions/extensions.dart';
-import 'package:calmly/features/authentication/domain/entities/topic_data.dart';
+import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -22,12 +22,7 @@ class TopicCard extends StatelessWidget {
         clipBehavior: Clip.antiAlias,
         child: Column(
           children: [
-            Expanded(
-              child: SvgPicture.asset(
-                topic.image,
-                fit: BoxFit.none,
-              ),
-            ),
+            Expanded(child: SvgPicture.asset(topic.image, fit: BoxFit.none)),
             Padding(
               padding: const EdgeInsets.only(left: 12, bottom: 12, right: 16),
               child: Text(
