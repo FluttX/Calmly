@@ -61,14 +61,14 @@ class RemainderScreen extends StatelessWidget {
                 width: context.width,
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: FilledButton(
-                  onPressed: () => context.push(AppRoute.mainView),
+                  onPressed: () => context.go(AppRoute.mainView),
                   child: Text(context.tr.save),
                 ),
               ),
               const SizedBox(height: 5),
               Center(
                 child: TextButton(
-                  onPressed: () => context.push(AppRoute.mainView),
+                  onPressed: () => context.go(AppRoute.mainView),
                   child: Text(context.tr.noThanks),
                 ),
               ),
