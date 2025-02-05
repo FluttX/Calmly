@@ -1,6 +1,7 @@
 import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/di/inject.dart';
 import 'package:calmly/features/authentication/authentication.dart';
+import 'package:calmly/features/main_tab_view/main_tab_view.dart';
 import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -47,6 +48,11 @@ class AppRouterConfig {
         create: (context) => DayBloc(inject())..add(LoadDaysEvent()),
         child: const RemainderScreen(),
       ),
+    ),
+    GoRoute(
+      path: AppRoute.mainView,
+      name: AppRoute.mainView,
+      builder: (_, __) => const MainTabView(),
     ),
   ];
 }

@@ -30,5 +30,14 @@
     "meditateDayTitle": "¿Qué día te gustaría meditar?",
     "meditateDaySubtitle": "Lo ideal es todos los días, pero recomendamos al menos cinco.",
     "save": "GUARDAR",
-    "noThanks": "NO, GRACIAS"
+    "noThanks": "NO, GRACIAS",
+    "home": "Inicio",
+    "sleep": "Dormir",
+    "meditate": "Meditar",
+    "music": "Música",
+    "profile": "Perfil",
+    "exitApp": "Salir de la aplicación",
+    "areYouSureToExit": "¿Estás seguro de que quieres salir?",
+    "no": "No",
+    "yes": "Sí"
 }

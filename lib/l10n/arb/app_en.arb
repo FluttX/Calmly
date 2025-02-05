@@ -30,5 +30,14 @@
     "meditateDayTitle" : "Which day would you like to meditate?",
     "meditateDaySubtitle" : "Everyday is best, but we recommend picking at least five.",
     "save": "SAVE",
-    "noThanks": "NO THANKS"
+    "noThanks": "NO THANKS",
+    "home": "Home",
+    "sleep": "Sleep",
+    "meditate": "Meditate",
+    "music": "Music",
+    "profile": "Profile",
+    "exitApp": "Exit App",
+    "areYouSureToExit": "Are you sure you want to exit?",
+    "no": "No",
+    "yes": "Yes"
 }

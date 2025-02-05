@@ -1,9 +1,11 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/common/common.dart';
 import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 
 class RemainderScreen extends StatelessWidget {
   const RemainderScreen({super.key});
@@ -59,14 +61,14 @@ class RemainderScreen extends StatelessWidget {
                 width: context.width,
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: FilledButton(
-                  onPressed: () {},
+                  onPressed: () => context.push(AppRoute.mainView),
                   child: Text(context.tr.save),
                 ),
               ),
               const SizedBox(height: 5),
               Center(
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => context.push(AppRoute.mainView),
                   child: Text(context.tr.noThanks),
                 ),
               ),
