@@ -50,5 +50,12 @@
     "relaxation": "Relajación",
     "start": "EMPEZAR",
     "dailyThought": "Pensamiento diario",
-    "meditation": "MEDITACIÓN"
+    "meditation": "MEDITACIÓN",
+    "goodMorning": "Feliz mañana",
+    "courseDetails": "Relaja la mente para una noche de sueño reparador con estos tonos profundos y ambientales.",
+    "favoriteCount": "{count} Favoritos",
+    "listenCount": "{count} Escuchando",
+    "pickANarrator": "Elige un narrador",
+    "maleVoice": "VOZ MASCULINA",
+    "femaleVoice": "VOZ FEMENINA"
 }

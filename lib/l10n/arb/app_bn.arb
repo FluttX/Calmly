@@ -50,5 +50,12 @@
     "relaxation": "বিশ্রাম",
     "start": "শুরু করুন",
     "dailyThought": "দৈনিক চিন্তা",
-    "meditation": "ধ্যান"
+    "meditation": "ধ্যান",
+    "goodMorning": "শুভ সকাল",
+    "courseDetails": "গভীর, পরিবেষ্টিত সুরগুলির মাধ্যমে মনকে আরামদায়ক ঘুমের জন্য প্রস্তুত করুন।",
+    "favoriteCount": "{count} পছন্দ",
+    "listenCount": "{count} শুনছে",
+    "pickANarrator": "একজন বক্তা নির্বাচন করুন",
+    "maleVoice": "পুরুষ কণ্ঠ",
+    "femaleVoice": "মহিলা কণ্ঠ"
 }

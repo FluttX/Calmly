@@ -23,10 +23,6 @@ class _MainTabViewState extends State<MainTabView>
   void initState() {
     super.initState();
     _tabController = TabController(length: 5, vsync: this);
-    /*_tabController.addListener(() {
-      _selectedTab.value = _tabController.index;
-    });*/
-
     _tabController.animation?.addListener(() {
       final newIndex = _tabController.animation?.value.round();
       if (newIndex != _selectedTab.value) {

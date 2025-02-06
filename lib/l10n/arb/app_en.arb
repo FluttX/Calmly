@@ -50,6 +50,12 @@
     "relaxation" : "Relaxation",
     "start" : "START",
     "dailyThought" : "Daily Thought",
-    "meditation" : "MEDITATION"
-
+    "meditation" : "MEDITATION",
+    "goodMorning" : "Happy Morning",
+    "courseDetails": "Ease the mind into a restful night’s sleep with these deep, ambient tones.",
+    "favoriteCount": "{count} Favorites",
+    "listenCount": "{count} Listening",
+    "pickANarrator": "Pick a Narrator",
+    "maleVoice": "MALE VOICE",
+    "femaleVoice": "FEMALE VOICE"
 }

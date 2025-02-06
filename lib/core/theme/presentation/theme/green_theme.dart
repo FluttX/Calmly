@@ -233,4 +233,7 @@ class GreenColor extends AppColors {
 
   @override
   Color get cardBackground => const Color(0xFFFFC97E);
+
+  @override
+  Color get iconBackground => const Color(0xFF03174C).withOpacity(0.5);
 }

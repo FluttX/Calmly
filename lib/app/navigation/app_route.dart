@@ -8,4 +8,5 @@ class AppRoute {
   static const chooseTopic = '/choose-topic';
   static const remainder = '/remainder';
   static const mainView = '/main';
+  static const details = '/details';
 }

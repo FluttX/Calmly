@@ -1,7 +1,8 @@
 import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/di/inject.dart';
 import 'package:calmly/features/authentication/authentication.dart';
-import 'package:calmly/features/home/presentation/bloc/course_bloc.dart';
+import 'package:calmly/features/details/details.dart';
+import 'package:calmly/features/home/home.dart';
 import 'package:calmly/features/main_tab_view/main_tab_view.dart';
 import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -57,6 +58,11 @@ class AppRouterConfig {
         create: (context) => CourseBloc(inject()),
         child: const MainTabView(),
       ),
+    ),
+    GoRoute(
+      path: AppRoute.details,
+      name: AppRoute.details,
+      builder: (_, __) => const DetailsScreen(),
     ),
   ];
 }

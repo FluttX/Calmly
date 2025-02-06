@@ -1,6 +1,8 @@
 class AppImages {
   static const _imageUrl = 'assets/images';
 
+  static const topBG = '$_imageUrl/details/top_bg.svg';
+
   static const basics = '$_imageUrl/home/basics.png';
   static const dailyThoughtBG = '$_imageUrl/home/daily_thought_bg.svg';
   static const focus = '$_imageUrl/home/focus.svg';

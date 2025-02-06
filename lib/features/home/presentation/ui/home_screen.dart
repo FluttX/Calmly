@@ -1,12 +1,13 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/common/common.dart';
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/home/home.dart';
-import 'package:calmly/features/home/presentation/bloc/course_bloc.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -72,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       title: context.tr.basics,
                       type: context.tr.course.toUpperCase(),
                       time: context.tr.minCount('3-10'),
-                      onTap: () {},
+                      onTap: () => context.push(AppRoute.details),
                     ),
                     const SizedBox(width: 20),
                     CourseTab(
@@ -84,14 +85,14 @@ class _HomeScreenState extends State<HomeScreen> {
                       time: context.tr.minCount('4-15'),
                       buttonBackground: context.colors.textPrimary,
                       buttonTextColor: context.colors.background,
-                      onTap: () {},
+                      onTap: () => context.push(AppRoute.details),
                     ),
                   ],
                 ),
               ),
               const SizedBox(height: 20),
               CourseFullTab(
-                onPressed: () {},
+                onPressed: () => context.push(AppRoute.details),
               ),
               const SizedBox(height: 30),
               const RecommendedCourses(),
