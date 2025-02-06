@@ -39,5 +39,16 @@
     "exitApp": "অ্যাপ থেকে বের হবেন",
     "areYouSureToExit": "আপনি কি নিশ্চিত যে আপনি বের হতে চান?",
     "no": "না",
-    "yes": "হ্যাঁ"
+    "yes": "হ্যাঁ",
+    "goodMorningUser": "সুপ্রভাত, {name}",
+    "goodAfternoonUser": "শুভ অপরাহ্ন, {name}",
+    "goodEveningUser": "শুভ সন্ধ্যা, {name}",
+    "weWishYouHaveAGoodDay": "আমরা আশা করি আপনার দিন ভালো কাটবে!",
+    "basics": "মৌলিক বিষয়",
+    "course": "কোর্স",
+    "minCount": "{minCount} মিনিট",
+    "relaxation": "বিশ্রাম",
+    "start": "শুরু করুন",
+    "dailyThought": "দৈনিক চিন্তা",
+    "meditation": "ধ্যান"
 }

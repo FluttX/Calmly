@@ -43,5 +43,7 @@ abstract class AppColors {
 
   Color get background;
 
+  Color get cardBackground;
+
   Color get socialButton;
 }

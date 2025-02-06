@@ -39,5 +39,17 @@
     "exitApp": "Exit App",
     "areYouSureToExit": "Are you sure you want to exit?",
     "no": "No",
-    "yes": "Yes"
+    "yes": "Yes",
+    "goodMorningUser" : "Good Morning, {name}",
+    "goodAfternoonUser" : "Good Afternoon, {name}",
+    "goodEveningUser" : "Good Evening, {name}",
+    "weWishYouHaveAGoodDay" : "We Wish you have a good day",
+    "basics" : "Basics",
+    "course" : "COURSE",
+    "minCount" : "{minCount} MIN",
+    "relaxation" : "Relaxation",
+    "start" : "START",
+    "dailyThought" : "Daily Thought",
+    "meditation" : "MEDITATION"
+
 }

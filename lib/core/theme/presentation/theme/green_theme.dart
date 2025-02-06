@@ -230,4 +230,7 @@ class GreenColor extends AppColors {
 
   @override
   Color get socialButton => const Color(0xFF66BB6A);
+
+  @override
+  Color get cardBackground => const Color(0xFFFFC97E);
 }

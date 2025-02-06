@@ -230,4 +230,7 @@ class LightColor extends AppColors {
 
   @override
   Color get socialButton => const Color(0xFF7583CA);
+
+  @override
+  Color get cardBackground => const Color(0xFFFFC97E);
 }

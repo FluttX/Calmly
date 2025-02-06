@@ -2,6 +2,7 @@ import 'package:calmly/core/common/common.dart';
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/core/utils/utils.dart';
+import 'package:calmly/features/home/home.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -76,7 +77,7 @@ class _MainTabViewState extends State<MainTabView>
           controller: _tabController,
           physics: const BouncingScrollPhysics(),
           children: [
-            Container(color: Colors.red.shade300),
+            const HomeScreen(),
             Container(color: Colors.green.shade300),
             Container(color: Colors.amber.shade300),
             Container(color: Colors.blue.shade300),
@@ -94,7 +95,6 @@ class _MainTabViewState extends State<MainTabView>
                   BoxShadow(
                     color: Colors.black12,
                     blurRadius: 4,
-                    offset: Offset(0, -4),
                   ),
                 ],
               ),

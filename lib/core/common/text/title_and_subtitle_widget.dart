@@ -7,6 +7,7 @@ class TitleAndSubtitleWidget extends StatelessWidget {
     required this.subtitle,
     this.titleTextAlign = TextAlign.center,
     this.subTitleTextAlign = TextAlign.center,
+    this.crossAxisAlignment = CrossAxisAlignment.center,
     this.padding = const EdgeInsets.symmetric(horizontal: 50),
     super.key,
   });
@@ -15,6 +16,7 @@ class TitleAndSubtitleWidget extends StatelessWidget {
   final String subtitle;
   final TextAlign titleTextAlign;
   final TextAlign subTitleTextAlign;
+  final CrossAxisAlignment crossAxisAlignment;
   final EdgeInsets padding;
 
   @override
@@ -22,6 +24,7 @@ class TitleAndSubtitleWidget extends StatelessWidget {
     return Padding(
       padding: padding,
       child: Column(
+        crossAxisAlignment: crossAxisAlignment,
         children: [
           Text(
             title,
