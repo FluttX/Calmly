@@ -177,6 +177,12 @@ class GreenTheme extends AppTheme {
       );
 
   @override
+  TabBarTheme get tabBarTheme => TabBarTheme();
+
+  @override
+  DividerThemeData get dividerThemeData => DividerThemeData();
+
+  @override
   ThemeData get theme => ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor: colors.background,
@@ -185,6 +191,8 @@ class GreenTheme extends AppTheme {
         filledButtonTheme: filledButtonThemeData,
         outlinedButtonTheme: outlinedButtonThemeData,
         inputDecorationTheme: inputDecorationTheme,
+        tabBarTheme: tabBarTheme,
+        dividerTheme: dividerThemeData,
       );
 }
 
@@ -236,4 +244,7 @@ class GreenColor extends AppColors {
 
   @override
   Color get iconBackground => const Color(0xFF03174C).withOpacity(0.5);
+
+  @override
+  Color get divider => const Color(0xFFADB8D9);
 }

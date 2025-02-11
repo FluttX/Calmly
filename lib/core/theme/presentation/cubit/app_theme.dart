@@ -7,11 +7,15 @@ abstract class AppTheme {
 
   CheckboxThemeData get checkboxThemeData;
 
+  DividerThemeData get dividerThemeData;
+
   FilledButtonThemeData get filledButtonThemeData;
 
   OutlinedButtonThemeData get outlinedButtonThemeData;
 
   InputDecorationTheme get inputDecorationTheme;
+
+  TabBarTheme get tabBarTheme;
 
   ThemeData get theme;
 }
@@ -48,4 +52,6 @@ abstract class AppColors {
   Color get iconBackground;
 
   Color get socialButton;
+
+  Color get divider;
 }

@@ -177,6 +177,27 @@ class LightTheme extends AppTheme {
       );
 
   @override
+  TabBarTheme get tabBarTheme => TabBarTheme(
+        indicatorColor: colors.primaryColor,
+        indicatorSize: TabBarIndicatorSize.label,
+        dividerColor: const Color(0xFFE4E6FD),
+        dividerHeight: 1,
+        labelColor: colors.primaryColor,
+        labelStyle: textTheme.bodyLarge,
+        unselectedLabelColor: colors.textSecondary,
+        unselectedLabelStyle: textTheme.bodyLarge,
+      );
+
+  @override
+  DividerThemeData get dividerThemeData => DividerThemeData(
+        color: colors.divider,
+        thickness: 0.5,
+        space: 1,
+        indent: 0,
+        endIndent: 0,
+      );
+
+  @override
   ThemeData get theme => ThemeData(
         useMaterial3: true,
         scaffoldBackgroundColor: colors.background,
@@ -185,6 +206,8 @@ class LightTheme extends AppTheme {
         filledButtonTheme: filledButtonThemeData,
         outlinedButtonTheme: outlinedButtonThemeData,
         inputDecorationTheme: inputDecorationTheme,
+        tabBarTheme: tabBarTheme,
+        dividerTheme: dividerThemeData,
       );
 }
 
@@ -236,4 +259,7 @@ class LightColor extends AppColors {
 
   @override
   Color get iconBackground => const Color(0xFF03174C).withOpacity(0.5);
+
+  @override
+  Color get divider => const Color(0xFFADB8D9);
 }

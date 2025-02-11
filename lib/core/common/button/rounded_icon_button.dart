@@ -5,13 +5,21 @@ import 'package:flutter_svg/flutter_svg.dart';
 class RoundedIconButton extends StatelessWidget {
   const RoundedIconButton({
     required this.icon,
+    this.height = 50,
+    this.width = 50,
     this.color,
+    this.borderColor,
+    this.iconColor,
     this.onPressed,
     super.key,
   });
 
+  final double height;
+  final double width;
   final String icon;
   final Color? color;
+  final Color? borderColor;
+  final Color? iconColor;
   final void Function()? onPressed;
 
   @override
@@ -20,14 +28,22 @@ class RoundedIconButton extends StatelessWidget {
       padding: EdgeInsets.zero,
       onPressed: onPressed,
       icon: Container(
-        height: 50,
-        width: 50,
+        height: height,
+        width: width,
         decoration: BoxDecoration(
           color: color ?? context.colors.background,
           shape: BoxShape.circle,
+          border: borderColor != null ? Border.all(color: borderColor!) : null,
         ),
         alignment: Alignment.center,
-        child: SvgPicture.asset(icon, height: 16, width: 16),
+        child: SvgPicture.asset(
+          icon,
+          height: 16,
+          width: 16,
+          colorFilter: iconColor != null
+              ? ColorFilter.mode(iconColor!, BlendMode.srcIn)
+              : null,
+        ),
       ),
     );
   }

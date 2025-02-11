@@ -13,6 +13,13 @@ class _DetailsScreenState extends State<DetailsScreen> {
   ValueNotifier<bool> isFavorite = ValueNotifier(false);
 
   @override
+  void dispose() {
+    isFavorite.dispose();
+
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: NestedScrollView(
@@ -26,14 +33,12 @@ class _DetailsScreenState extends State<DetailsScreen> {
             onDownloadPressed: () {},
           ),
         ],
-        body: const SingleChildScrollView(
-          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CourseInfo(),
-            ],
-          ),
+        body: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            CourseInfo(),
+            Flexible(child: CourseAudioNarration()),
+          ],
         ),
       ),
     );
