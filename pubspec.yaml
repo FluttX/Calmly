@@ -31,7 +31,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   injectable_generator: ^2.6.2
-  json_serializable: ^6.9.0
+  json_serializable: ^6.9.3
   mocktail: ^1.0.4
   very_good_analysis: ^7.0.0
 
