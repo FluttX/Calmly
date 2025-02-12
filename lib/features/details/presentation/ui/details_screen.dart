@@ -15,7 +15,6 @@ class _DetailsScreenState extends State<DetailsScreen> {
   @override
   void dispose() {
     isFavorite.dispose();
-
     super.dispose();
   }
 

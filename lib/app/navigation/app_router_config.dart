@@ -62,7 +62,10 @@ class AppRouterConfig {
     GoRoute(
       path: AppRoute.details,
       name: AppRoute.details,
-      builder: (_, __) => const DetailsScreen(),
+      builder: (_, __) => BlocProvider(
+        create: (context) => AudioBloc(inject())..add(LoadAudioResponseEvent()),
+        child: const DetailsScreen(),
+      ),
     ),
   ];
 }

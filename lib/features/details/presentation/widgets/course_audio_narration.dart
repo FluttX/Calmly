@@ -2,6 +2,7 @@ import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/details/details.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class CourseAudioNarration extends StatefulWidget {
   const CourseAudioNarration({super.key});
@@ -13,6 +14,7 @@ class CourseAudioNarration extends StatefulWidget {
 class _CourseAudioNarrationState extends State<CourseAudioNarration>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
+
   @override
   void initState() {
     super.initState();
@@ -48,9 +50,39 @@ class _CourseAudioNarrationState extends State<CourseAudioNarration>
         Expanded(
           child: TabBarView(
             controller: _tabController,
-            children: const [
-              MaleVoice(),
-              MaleVoice(),
+            children: [
+              BlocBuilder<AudioBloc, AudioState>(
+                builder: (context, state) {
+                  if (state is AudioResponseLoading) {
+                    return const Center(
+                      child: CircularProgressIndicator.adaptive(),
+                    );
+                  }
+                  if (state is AudioResponseLoaded) {
+                    return AudioVoice(audios: state.maleResponses);
+                  }
+                  if (state is AudioResponseError) {
+                    return Center(child: Text(state.message));
+                  }
+                  return const SizedBox();
+                },
+              ),
+              BlocBuilder<AudioBloc, AudioState>(
+                builder: (context, state) {
+                  if (state is AudioResponseLoading) {
+                    return const Center(
+                      child: CircularProgressIndicator.adaptive(),
+                    );
+                  }
+                  if (state is AudioResponseLoaded) {
+                    return AudioVoice(audios: state.femaleResponses);
+                  }
+                  if (state is AudioResponseError) {
+                    return Center(child: Text(state.message));
+                  }
+                  return const SizedBox();
+                },
+              ),
             ],
           ),
         ),

@@ -21,9 +21,9 @@ class AudioCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       onTap: onTap,
-      title: Text('Body Scan', style: context.textTheme.bodyLarge),
+      title: Text(title, style: context.textTheme.bodyLarge),
       subtitle: Text(
-        '5 MIN',
+        time,
         style: context.textTheme.labelMedium
             ?.copyWith(fontWeight: FontWeight.w400),
       ),
@@ -31,6 +31,7 @@ class AudioCard extends StatelessWidget {
         height: 40,
         width: 40,
         icon: AppIcons.icPlay,
+        iconSize: 12,
         iconColor:
             isActive ? context.colors.background : context.colors.textSecondary,
         color:

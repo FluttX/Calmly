@@ -7,6 +7,7 @@ class RoundedIconButton extends StatelessWidget {
     required this.icon,
     this.height = 50,
     this.width = 50,
+    this.iconSize = 16,
     this.color,
     this.borderColor,
     this.iconColor,
@@ -16,6 +17,7 @@ class RoundedIconButton extends StatelessWidget {
 
   final double height;
   final double width;
+  final double iconSize;
   final String icon;
   final Color? color;
   final Color? borderColor;
@@ -38,8 +40,8 @@ class RoundedIconButton extends StatelessWidget {
         alignment: Alignment.center,
         child: SvgPicture.asset(
           icon,
-          height: 16,
-          width: 16,
+          height: iconSize,
+          width: iconSize,
           colorFilter: iconColor != null
               ? ColorFilter.mode(iconColor!, BlendMode.srcIn)
               : null,
