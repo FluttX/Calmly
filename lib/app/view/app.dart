@@ -1,7 +1,7 @@
 import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/di/inject.dart';
 import 'package:calmly/core/theme/theme.dart';
-import 'package:calmly/l10n/l10n.dart';
+import 'package:calmly/l10n/arb/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
