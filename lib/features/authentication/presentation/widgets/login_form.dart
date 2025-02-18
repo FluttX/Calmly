@@ -11,7 +11,7 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm> {
-  final ValueNotifier<bool> _obscurePassword = ValueNotifier(true);
+  final _obscurePassword = ValueNotifier(true);
 
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
