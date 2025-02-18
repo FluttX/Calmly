@@ -8,6 +8,7 @@ class ButtonWithIconAndText extends StatelessWidget {
     required this.icon,
     this.height = 46,
     this.width = 46,
+    this.iconSize = 22,
     this.iSActive = false,
     this.activeColor,
     this.inactiveColor,
@@ -18,6 +19,7 @@ class ButtonWithIconAndText extends StatelessWidget {
   final bool iSActive;
   final double height;
   final double width;
+  final double iconSize;
   final String text;
   final String icon;
   final Color? activeColor;
@@ -44,9 +46,8 @@ class ButtonWithIconAndText extends StatelessWidget {
             alignment: Alignment.center,
             child: SvgPicture.asset(
               icon,
-              height: height * 0.5,
-              width: width * 0.5,
-              fit: BoxFit.none,
+              height: iconSize,
+              width: iconSize,
               colorFilter: iSActive
                   ? ColorFilter.mode(
                       context.colors.background,

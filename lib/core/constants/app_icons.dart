@@ -1,6 +1,7 @@
 class AppIcons {
   static const _iconUrl = 'assets/icons';
 
+  static const icAll = '$_iconUrl/ic_all.svg';
   static const icBack = '$_iconUrl/ic_back.svg';
   static const icDownload = '$_iconUrl/ic_download.svg';
   static const icFavorite = '$_iconUrl/ic_favorite.svg';

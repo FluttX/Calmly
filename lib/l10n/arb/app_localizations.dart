@@ -444,6 +444,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'FEMALE VOICE'**
   String get femaleVoice;
+
+  /// No description provided for @meditateSubtitle.
+  ///
+  /// In en, this message translates to:
+  /// **'we can learn how to recognize when our minds are doing their normal everyday acrobatics.'**
+  String get meditateSubtitle;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

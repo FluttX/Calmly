@@ -199,4 +199,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get femaleVoice => 'VOZ FEMENINA';
+
+  @override
+  String get meditateSubtitle => 'Podemos aprender a reconocer cuando nuestras mentes están haciendo sus acrobacias diarias habituales.';
 }

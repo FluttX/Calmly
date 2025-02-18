@@ -199,4 +199,7 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get femaleVoice => 'মহিলা কণ্ঠ';
+
+  @override
+  String get meditateSubtitle => 'আমরা শিখতে পারি কিভাবে চিনতে হয় যখন আমাদের মন তাদের স্বাভাবিক দৈনন্দিন কসরত করছে।';
 }
