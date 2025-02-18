@@ -11,15 +11,16 @@ class LoginForm extends StatefulWidget {
 }
 
 class _LoginFormState extends State<LoginForm> {
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
+  final ValueNotifier<bool> _obscurePassword = ValueNotifier(true);
 
-  bool obscureText = true;
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
 
   @override
   void dispose() {
-    emailController.dispose();
-    passwordController.dispose();
+    _obscurePassword.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
     super.dispose();
   }
 
@@ -33,28 +34,31 @@ class _LoginFormState extends State<LoginForm> {
         ),
         const SizedBox(height: 40),
         AppTextFormField(
-          controller: emailController,
+          controller: _emailController,
           hintText: context.tr.emailAddress,
           keyboardType: TextInputType.emailAddress,
         ),
         const SizedBox(height: 20),
-        AppTextFormField(
-          controller: passwordController,
-          hintText: context.tr.password,
-          keyboardType: TextInputType.visiblePassword,
-          obscureText: obscureText,
-          suffixIcon: IconButton(
-            onPressed: () {
-              setState(() {
-                obscureText = !obscureText;
-              });
-            },
-            icon: Icon(
-              obscureText ? Icons.visibility_off : Icons.visibility,
-              size: 20,
-              color: context.colors.textSecondary,
-            ),
-          ),
+        ValueListenableBuilder(
+          valueListenable: _obscurePassword,
+          builder: (context, isObscured, child) {
+            return AppTextFormField(
+              controller: _passwordController,
+              hintText: context.tr.password,
+              keyboardType: TextInputType.visiblePassword,
+              obscureText: isObscured,
+              suffixIcon: IconButton(
+                onPressed: () {
+                  _obscurePassword.value = !_obscurePassword.value;
+                },
+                icon: Icon(
+                  isObscured ? Icons.visibility_off : Icons.visibility,
+                  size: 20,
+                  color: context.colors.textSecondary,
+                ),
+              ),
+            );
+          },
         ),
         const SizedBox(height: 30),
         SizedBox(
