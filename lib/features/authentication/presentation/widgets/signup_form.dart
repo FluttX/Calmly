@@ -23,6 +23,7 @@ class _SignupFormState extends State<SignupForm> {
 
   @override
   void dispose() {
+    nameController.dispose();
     emailController.dispose();
     passwordController.dispose();
     super.dispose();
