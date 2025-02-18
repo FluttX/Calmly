@@ -14,18 +14,20 @@ class SignupForm extends StatefulWidget {
 }
 
 class _SignupFormState extends State<SignupForm> {
-  final nameController = TextEditingController();
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
+  final _obscurePassword = ValueNotifier(true);
+  final _isAcceptPrivacyPolicy = ValueNotifier(false);
 
-  bool obscureText = true;
-  bool isAcceptPrivacyPolicy = false;
+  final _nameController = TextEditingController();
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
 
   @override
   void dispose() {
-    nameController.dispose();
-    emailController.dispose();
-    passwordController.dispose();
+    _obscurePassword.dispose();
+    _isAcceptPrivacyPolicy.dispose();
+    _nameController.dispose();
+    _emailController.dispose();
+    _passwordController.dispose();
     super.dispose();
   }
 
@@ -39,34 +41,37 @@ class _SignupFormState extends State<SignupForm> {
         ),
         const SizedBox(height: 40),
         AppTextFormField(
-          controller: nameController,
+          controller: _nameController,
           hintText: context.tr.name,
           keyboardType: TextInputType.name,
         ),
         const SizedBox(height: 20),
         AppTextFormField(
-          controller: emailController,
+          controller: _emailController,
           hintText: context.tr.emailAddress,
           keyboardType: TextInputType.emailAddress,
         ),
         const SizedBox(height: 20),
-        AppTextFormField(
-          controller: passwordController,
-          hintText: context.tr.password,
-          keyboardType: TextInputType.visiblePassword,
-          obscureText: obscureText,
-          suffixIcon: IconButton(
-            onPressed: () {
-              setState(() {
-                obscureText = !obscureText;
-              });
-            },
-            icon: Icon(
-              obscureText ? Icons.visibility_off : Icons.visibility,
-              size: 20,
-              color: context.colors.textSecondary,
-            ),
-          ),
+        ValueListenableBuilder(
+          valueListenable: _obscurePassword,
+          builder: (context, isObscured, child) {
+            return AppTextFormField(
+              controller: _passwordController,
+              hintText: context.tr.password,
+              keyboardType: TextInputType.visiblePassword,
+              obscureText: isObscured,
+              suffixIcon: IconButton(
+                onPressed: () {
+                  _obscurePassword.value = !_obscurePassword.value;
+                },
+                icon: Icon(
+                  isObscured ? Icons.visibility_off : Icons.visibility,
+                  size: 20,
+                  color: context.colors.textSecondary,
+                ),
+              ),
+            );
+          },
         ),
         const SizedBox(height: 15),
         Row(
@@ -78,16 +83,21 @@ class _SignupFormState extends State<SignupForm> {
                 staticText: context.tr.iHaveReadThe,
                 actionText: context.tr.privacyPolicy,
                 onPressed: () {
-                  debugPrint('--------: $isAcceptPrivacyPolicy');
+                  debugPrint('--------: ${_isAcceptPrivacyPolicy.value}');
                 },
               ),
             ),
-            Checkbox(
-              value: isAcceptPrivacyPolicy,
-              onChanged: (value) {
-                setState(() {
-                  isAcceptPrivacyPolicy = !isAcceptPrivacyPolicy;
-                });
+            ValueListenableBuilder(
+              valueListenable: _isAcceptPrivacyPolicy,
+              builder: (context, isAccept, child) {
+                return Checkbox(
+                  value: isAccept,
+                  onChanged: (value) {
+                    if (value == null) return;
+
+                    _isAcceptPrivacyPolicy.value = value;
+                  },
+                );
               },
             ),
           ],
