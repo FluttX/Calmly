@@ -1,8 +1,7 @@
-import 'package:calmly/core/common/common.dart';
-import 'package:calmly/core/constants/constants.dart';
-import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/core/utils/utils.dart';
 import 'package:calmly/features/home/home.dart';
+import 'package:calmly/features/main_tab_view/main_tab_view.dart';
+import 'package:calmly/features/meditate/meditate.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -16,8 +15,9 @@ class MainTabView extends StatefulWidget {
 
 class _MainTabViewState extends State<MainTabView>
     with SingleTickerProviderStateMixin {
+  final _selectedTab = ValueNotifier<int>(0);
+
   late final TabController _tabController;
-  final ValueNotifier<int> _selectedTab = ValueNotifier<int>(0);
 
   @override
   void initState() {
@@ -75,64 +75,14 @@ class _MainTabViewState extends State<MainTabView>
           children: [
             const HomeScreen(),
             Container(color: Colors.green.shade300),
-            Container(color: Colors.amber.shade300),
+            const MeditateScreen(),
             Container(color: Colors.blue.shade300),
             Container(color: Colors.orange.shade300),
           ],
         ),
-        bottomNavigationBar: ValueListenableBuilder(
+        bottomNavigationBar: CalmlyBottomNavigationBar(
           valueListenable: _selectedTab,
-          builder: (context, currentIndex, child) {
-            return Container(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              decoration: BoxDecoration(
-                color: context.colors.background,
-                boxShadow: const [
-                  BoxShadow(
-                    color: Colors.black12,
-                    blurRadius: 4,
-                  ),
-                ],
-              ),
-              child: SafeArea(
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ButtonWithIconAndText(
-                      iSActive: currentIndex == 0,
-                      text: context.tr.home,
-                      icon: AppIcons.icHome,
-                      onTap: () => _onChangeTap(0),
-                    ),
-                    ButtonWithIconAndText(
-                      iSActive: currentIndex == 1,
-                      text: context.tr.sleep,
-                      icon: AppIcons.icSleep,
-                      onTap: () => _onChangeTap(1),
-                    ),
-                    ButtonWithIconAndText(
-                      iSActive: currentIndex == 2,
-                      text: context.tr.meditate,
-                      icon: AppIcons.icMeditate,
-                      onTap: () => _onChangeTap(2),
-                    ),
-                    ButtonWithIconAndText(
-                      iSActive: currentIndex == 3,
-                      text: context.tr.music,
-                      icon: AppIcons.icMusic,
-                      onTap: () => _onChangeTap(3),
-                    ),
-                    ButtonWithIconAndText(
-                      iSActive: currentIndex == 4,
-                      text: context.tr.profile,
-                      icon: AppIcons.icProfile,
-                      onTap: () => _onChangeTap(4),
-                    ),
-                  ],
-                ),
-              ),
-            );
-          },
+          onChanged: _onChangeTap,
         ),
       ),
     );
