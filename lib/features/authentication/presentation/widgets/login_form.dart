@@ -49,7 +49,7 @@ class _LoginFormState extends State<LoginForm> {
           AppTextFormField(
             controller: _emailController,
             hintText: context.tr.emailAddress,
-            validator: AppValidators.validateEmail,
+            validator: (value) => AppValidators.validateEmail(context, value),
             keyboardType: TextInputType.emailAddress,
           ),
           const SizedBox(height: 20),
@@ -59,7 +59,8 @@ class _LoginFormState extends State<LoginForm> {
               return AppTextFormField(
                 controller: _passwordController,
                 hintText: context.tr.password,
-                validator: AppValidators.validatePassword,
+                validator: (value) =>
+                    AppValidators.validatePassword(context, value),
                 keyboardType: TextInputType.visiblePassword,
                 obscureText: isObscured,
                 suffixIcon: IconButton(

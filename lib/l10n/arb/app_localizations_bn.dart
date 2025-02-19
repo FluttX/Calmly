@@ -202,4 +202,28 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get meditateSubtitle => 'আমরা শিখতে পারি কিভাবে চিনতে হয় যখন আমাদের মন তাদের স্বাভাবিক দৈনন্দিন কসরত করছে।';
+
+  @override
+  String get emailIsRequired => 'ইমেল প্রয়োজন';
+
+  @override
+  String get enterAValidEmail => 'একটি বৈধ ইমেল দিন';
+
+  @override
+  String get passwordIsRequired => 'পাসওয়ার্ড প্রয়োজন';
+
+  @override
+  String get passwordValidation => 'পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে';
+
+  @override
+  String get nameIsRequired => 'নাম প্রয়োজন';
+
+  @override
+  String get nameValidation => 'নাম কমপক্ষে ৩ অক্ষরের হতে হবে';
+
+  @override
+  String get privacyPolicyValidation => 'চালিয়ে যেতে অনুগ্রহ করে গোপনীয়তা নীতি গ্রহণ করুন।';
+
+  @override
+  String get signupSuccess => 'সফলভাবে সাইন আপ হয়েছে! পুনঃনির্দেশ করা হচ্ছে...';
 }

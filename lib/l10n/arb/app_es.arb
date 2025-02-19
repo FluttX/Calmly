@@ -58,5 +58,13 @@
     "pickANarrator": "Elige un narrador",
     "maleVoice": "VOZ MASCULINA",
     "femaleVoice": "VOZ FEMENINA",
-    "meditateSubtitle": "Podemos aprender a reconocer cuando nuestras mentes están haciendo sus acrobacias diarias habituales."
+    "meditateSubtitle": "Podemos aprender a reconocer cuando nuestras mentes están haciendo sus acrobacias diarias habituales.",
+    "emailIsRequired": "El correo electrónico es obligatorio",
+    "enterAValidEmail": "Ingrese un correo electrónico válido",
+    "passwordIsRequired": "La contraseña es obligatoria",
+    "passwordValidation": "La contraseña debe tener al menos 6 caracteres",
+    "nameIsRequired": "El nombre es obligatorio",
+    "nameValidation": "El nombre debe tener al menos 3 caracteres",
+    "privacyPolicyValidation": "Por favor, acepte la Política de Privacidad para continuar.",
+    "signupSuccess": "¡Registro exitoso! Redirigiendo..."
 }

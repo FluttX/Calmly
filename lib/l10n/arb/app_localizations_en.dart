@@ -202,4 +202,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get meditateSubtitle => 'we can learn how to recognize when our minds are doing their normal everyday acrobatics.';
+
+  @override
+  String get emailIsRequired => 'Email is required';
+
+  @override
+  String get enterAValidEmail => 'Enter a valid email';
+
+  @override
+  String get passwordIsRequired => 'Password is required';
+
+  @override
+  String get passwordValidation => 'Password must be at least 6 characters';
+
+  @override
+  String get nameIsRequired => 'Name is required';
+
+  @override
+  String get nameValidation => 'Name must be at least 3 characters';
+
+  @override
+  String get privacyPolicyValidation => 'Please accept the Privacy Policy to continue.';
+
+  @override
+  String get signupSuccess => 'Signup successful! Redirecting...';
 }

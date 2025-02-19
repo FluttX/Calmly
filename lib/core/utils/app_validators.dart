@@ -1,42 +1,34 @@
+import 'package:calmly/l10n/l10n.dart';
+import 'package:flutter/cupertino.dart';
+
 class AppValidators {
-  static String? validateEmail(String? value) {
+  static String? validateEmail(BuildContext context, String? value) {
     if (value == null || value.isEmpty) {
-      return 'Email is required';
+      return context.tr.emailIsRequired;
     }
     final emailRegex = RegExp(r'^[^@]+@[^@]+\.[^@]+');
     if (!emailRegex.hasMatch(value)) {
-      return 'Enter a valid email';
+      return context.tr.enterAValidEmail;
     }
     return null;
   }
 
-  static String? validatePassword(String? value) {
+  static String? validatePassword(BuildContext context, String? value) {
     if (value == null || value.isEmpty) {
-      return 'Password is required';
+      return context.tr.passwordIsRequired;
     }
     if (value.length < 6) {
-      return 'Password must be at least 6 characters';
+      return context.tr.passwordValidation;
     }
     return null;
   }
 
-  static String? validateUsername(String? value) {
+  static String? validateName(BuildContext context, String? value) {
     if (value == null || value.isEmpty) {
-      return 'Username is required';
+      return context.tr.nameIsRequired;
     }
     if (value.length < 3) {
-      return 'Username must be at least 3 characters';
-    }
-    return null;
-  }
-
-  static String? validatePhoneNumber(String? value) {
-    if (value == null || value.isEmpty) {
-      return 'Phone number is required';
-    }
-    final phoneRegex = RegExp(r'^\+?[0-9]{10,15}$');
-    if (!phoneRegex.hasMatch(value)) {
-      return 'Enter a valid phone number';
+      return context.tr.nameValidation;
     }
     return null;
   }

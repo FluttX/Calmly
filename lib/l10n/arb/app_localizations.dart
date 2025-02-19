@@ -450,6 +450,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'we can learn how to recognize when our minds are doing their normal everyday acrobatics.'**
   String get meditateSubtitle;
+
+  /// No description provided for @emailIsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Email is required'**
+  String get emailIsRequired;
+
+  /// No description provided for @enterAValidEmail.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter a valid email'**
+  String get enterAValidEmail;
+
+  /// No description provided for @passwordIsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Password is required'**
+  String get passwordIsRequired;
+
+  /// No description provided for @passwordValidation.
+  ///
+  /// In en, this message translates to:
+  /// **'Password must be at least 6 characters'**
+  String get passwordValidation;
+
+  /// No description provided for @nameIsRequired.
+  ///
+  /// In en, this message translates to:
+  /// **'Name is required'**
+  String get nameIsRequired;
+
+  /// No description provided for @nameValidation.
+  ///
+  /// In en, this message translates to:
+  /// **'Name must be at least 3 characters'**
+  String get nameValidation;
+
+  /// No description provided for @privacyPolicyValidation.
+  ///
+  /// In en, this message translates to:
+  /// **'Please accept the Privacy Policy to continue.'**
+  String get privacyPolicyValidation;
+
+  /// No description provided for @signupSuccess.
+  ///
+  /// In en, this message translates to:
+  /// **'Signup successful! Redirecting...'**
+  String get signupSuccess;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

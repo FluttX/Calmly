@@ -58,5 +58,13 @@
     "pickANarrator": "Pick a Narrator",
     "maleVoice": "MALE VOICE",
     "femaleVoice": "FEMALE VOICE",
-    "meditateSubtitle": "we can learn how to recognize when our minds are doing their normal everyday acrobatics."
+    "meditateSubtitle": "we can learn how to recognize when our minds are doing their normal everyday acrobatics.",
+    "emailIsRequired": "Email is required",
+    "enterAValidEmail": "Enter a valid email",
+    "passwordIsRequired": "Password is required",
+    "passwordValidation": "Password must be at least 6 characters",
+    "nameIsRequired": "Name is required",
+    "nameValidation": "Name must be at least 3 characters",
+    "privacyPolicyValidation": "Please accept the Privacy Policy to continue.",
+    "signupSuccess": "Signup successful! Redirecting..."
 }
