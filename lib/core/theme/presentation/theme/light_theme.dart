@@ -152,11 +152,11 @@ class LightTheme extends AppTheme {
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: colors.error, width: 2),
+          borderSide: BorderSide(color: colors.error, width: 1.5),
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: colors.error, width: 2),
+          borderSide: BorderSide(color: colors.error, width: 1.5),
         ),
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
