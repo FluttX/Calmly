@@ -5,7 +5,6 @@ import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/home/home.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 
@@ -18,12 +17,6 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   late String greetingMessage;
-
-  @override
-  void initState() {
-    super.initState();
-    context.read<CourseBloc>().add(LoadRecommendedCoursesEvent());
-  }
 
   @override
   void didChangeDependencies() {

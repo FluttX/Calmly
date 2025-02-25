@@ -1,8 +1,10 @@
+import 'package:calmly/app/navigation/navigation.dart';
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 
 class SocialLoginButton extends StatelessWidget {
   const SocialLoginButton({super.key});
@@ -14,7 +16,7 @@ class SocialLoginButton extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: FilledButton.icon(
-            onPressed: () {},
+            onPressed: () => context.go(AppRoute.welcome),
             style: FilledButton.styleFrom(
               backgroundColor: context.colors.socialButton,
             ),
@@ -30,7 +32,7 @@ class SocialLoginButton extends StatelessWidget {
         SizedBox(
           width: double.infinity,
           child: OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: () => context.go(AppRoute.welcome),
             label: Text(context.tr.continueWithGoogle),
             icon: SvgPicture.asset(
               AppImages.icGoogle,

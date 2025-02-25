@@ -4,6 +4,7 @@ import 'package:calmly/features/authentication/authentication.dart';
 import 'package:calmly/features/details/details.dart';
 import 'package:calmly/features/home/home.dart';
 import 'package:calmly/features/main_tab_view/main_tab_view.dart';
+import 'package:calmly/features/meditate/meditate.dart';
 import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -54,8 +55,17 @@ class AppRouterConfig {
     GoRoute(
       path: AppRoute.mainView,
       name: AppRoute.mainView,
-      builder: (_, __) => BlocProvider(
-        create: (context) => CourseBloc(inject()),
+      builder: (_, __) => MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) =>
+                CourseBloc(inject())..add(LoadRecommendedCoursesEvent()),
+          ),
+          BlocProvider(
+            create: (context) =>
+                MeditateBloc(inject())..add(LoadMeditateCategories()),
+          ),
+        ],
         child: const MainTabView(),
       ),
     ),

@@ -1,3 +1,4 @@
+// dart format width=80
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
 // **************************************************************************
@@ -27,6 +28,14 @@ import 'package:calmly/features/home/domain/repository/course_repository.dart'
     as _i904;
 import 'package:calmly/features/home/domain/usecase/get_recommended_courses_usecase.dart'
     as _i162;
+import 'package:calmly/features/meditate/data/datasource/remote/meditate_remote_datasource.dart'
+    as _i855;
+import 'package:calmly/features/meditate/data/repository/meditate_repository_impl.dart'
+    as _i723;
+import 'package:calmly/features/meditate/domain/repository/meditate_repository.dart'
+    as _i171;
+import 'package:calmly/features/meditate/domain/usecase/get_meditate_categories_usecase.dart'
+    as _i508;
 import 'package:calmly/features/onboarding/data/datasource/remote/day_remote_datasource.dart'
     as _i953;
 import 'package:calmly/features/onboarding/data/datasource/remote/topic_remote_datasource.dart'
@@ -64,12 +73,16 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i1018.DayRepositoryImpl(gh<_i655.DayRemoteDataSource>()));
     gh.singleton<_i655.TopicRepository>(() => _i4.TopicRepositoryImpl(
         remoteDataSource: gh<_i655.TopicRemoteDataSource>()));
+    gh.singleton<_i855.MeditateRemoteDataSource>(
+        () => _i855.MeditateRemoteDataSourceImpl());
     gh.singleton<_i513.AudioRemoteDataSource>(
         () => _i513.AudioRemoteDataSourceImpl());
     gh.singleton<_i904.CourseRepository>(
         () => _i38.CourseRepositoryImpl(gh<_i478.CourseRemoteDatasource>()));
     gh.singleton<_i352.ThemeRepository>(
         () => _i549.ThemeRepositoryImpl(gh<_i986.Box<String>>()));
+    gh.singleton<_i171.MeditateRepository>(() =>
+        _i723.MeditateRepositoryImpl(gh<_i855.MeditateRemoteDataSource>()));
     gh.singleton<_i136.AudioRepository>(
         () => _i353.AudioRepositoryImpl(gh<_i513.AudioRemoteDataSource>()));
     gh.singleton<_i506.GetDayUsecase>(
@@ -80,6 +93,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i780.GetTopicUsecase(repository: gh<_i655.TopicRepository>()));
     gh.singleton<_i162.GetRecommendedCoursesUsecase>(
         () => _i162.GetRecommendedCoursesUsecase(gh<_i904.CourseRepository>()));
+    gh.singleton<_i508.GetMeditateCategoriesUseCase>(() =>
+        _i508.GetMeditateCategoriesUseCase(gh<_i171.MeditateRepository>()));
     return this;
   }
 }
