@@ -1,6 +1,5 @@
 import 'package:calmly/core/extensions/extensions.dart';
 import 'package:calmly/features/home/home.dart';
-import 'package:calmly/features/home/presentation/bloc/course_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -47,7 +46,7 @@ class RecommendedCourses extends StatelessWidget {
               return const SizedBox();
             },
           ),
-        )
+        ),
       ],
     );
   }
