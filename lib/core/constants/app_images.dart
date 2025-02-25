@@ -20,6 +20,8 @@ class AppImages {
   static const icFacebook = '$_imageUrl/login/ic_facebook.svg';
   static const icGoogle = '$_imageUrl/login/ic_google.svg';
 
+  static const dailyClam = '$_imageUrl/meditate/daily_clam.svg';
+
   static const welcomeAppLogo = '$_imageUrl/welcome/welcome_app_logo.svg';
   static const welcomeBackground = '$_imageUrl/welcome/welcome_background.svg';
 

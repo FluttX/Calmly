@@ -1,12 +1,32 @@
 import 'package:calmly/core/constants/constants.dart';
 import 'package:calmly/core/extensions/extensions.dart';
-import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CourseFullTab extends StatelessWidget {
-  const CourseFullTab({this.onPressed, super.key});
+class CourseFullCard extends StatelessWidget {
+  const CourseFullCard({
+    required this.title,
+    required this.leftSubtitle,
+    required this.rightSubtitle,
+    this.titleColor,
+    this.subtitleColor,
+    this.iconColor,
+    this.iconBackgroundColor,
+    this.backgroundColor = const Color(0xFF333242),
+    this.backgroundImage = AppImages.dailyThoughtBG,
+    this.onPressed,
+    super.key,
+  });
 
+  final Color? titleColor;
+  final Color? subtitleColor;
+  final Color? iconColor;
+  final Color? iconBackgroundColor;
+  final Color backgroundColor;
+  final String title;
+  final String leftSubtitle;
+  final String rightSubtitle;
+  final String backgroundImage;
   final void Function()? onPressed;
 
   @override
@@ -15,7 +35,7 @@ class CourseFullTab extends StatelessWidget {
       width: double.maxFinite,
       margin: const EdgeInsets.symmetric(horizontal: 20),
       decoration: BoxDecoration(
-        color: const Color(0xFF333242),
+        color: backgroundColor,
         borderRadius: BorderRadius.circular(15),
       ),
       clipBehavior: Clip.antiAlias,
@@ -24,10 +44,7 @@ class CourseFullTab extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
         child: Stack(
           children: [
-            SvgPicture.asset(
-              AppImages.dailyThoughtBG,
-              fit: BoxFit.cover,
-            ),
+            SvgPicture.asset(backgroundImage, fit: BoxFit.cover),
             Padding(
               padding: const EdgeInsets.only(
                 top: 20,
@@ -42,20 +59,20 @@ class CourseFullTab extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        context.tr.dailyThought,
+                        title,
                         style: context.textTheme.titleSmall?.copyWith(
                           fontWeight: FontWeight.bold,
-                          color: context.colors.background,
+                          color: titleColor ?? context.colors.background,
                         ),
                       ),
                       const SizedBox(height: 5),
                       Row(
                         children: [
                           Text(
-                            context.tr.meditation,
+                            leftSubtitle,
                             style: context.textTheme.bodySmall?.copyWith(
                               fontWeight: FontWeight.w400,
-                              color: context.colors.background,
+                              color: subtitleColor ?? context.colors.background,
                             ),
                           ),
                           Padding(
@@ -63,14 +80,14 @@ class CourseFullTab extends StatelessWidget {
                             child: Icon(
                               Icons.circle,
                               size: 4,
-                              color: context.colors.background,
+                              color: subtitleColor ?? context.colors.background,
                             ),
                           ),
                           Text(
-                            context.tr.minCount('3-10'),
+                            rightSubtitle,
                             style: context.textTheme.bodySmall?.copyWith(
                               fontWeight: FontWeight.w400,
-                              color: context.colors.background,
+                              color: subtitleColor ?? context.colors.background,
                             ),
                           ),
                         ],
@@ -83,7 +100,7 @@ class CourseFullTab extends StatelessWidget {
                       height: 40,
                       width: 40,
                       decoration: BoxDecoration(
-                        color: context.colors.background,
+                        color: iconBackgroundColor ?? context.colors.background,
                         shape: BoxShape.circle,
                       ),
                       alignment: Alignment.center,
@@ -92,6 +109,9 @@ class CourseFullTab extends StatelessWidget {
                         height: 12,
                         width: 12,
                         fit: BoxFit.none,
+                        colorFilter: iconColor != null
+                            ? ColorFilter.mode(iconColor!, BlendMode.srcIn)
+                            : null,
                       ),
                     ),
                   ),

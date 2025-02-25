@@ -66,5 +66,7 @@
     "nameIsRequired": "El nombre es obligatorio",
     "nameValidation": "El nombre debe tener al menos 3 caracteres",
     "privacyPolicyValidation": "Por favor, acepte la Política de Privacidad para continuar.",
-    "signupSuccess": "¡Registro exitoso! Redirigiendo..."
+    "signupSuccess": "¡Registro exitoso! Redirigiendo...",
+    "dailyClam": "Calma Diaria",
+    "pausePractice": "Pausar Práctica"
 }

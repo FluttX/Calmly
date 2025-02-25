@@ -226,4 +226,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get signupSuccess => 'Signup successful! Redirecting...';
+
+  @override
+  String get dailyClam => 'Daily Calm';
+
+  @override
+  String get pausePractice => 'PAUSE PRACTICE';
 }

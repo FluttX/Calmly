@@ -84,7 +84,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              CourseFullTab(
+              CourseFullCard(
+                title: context.tr.dailyThought,
+                leftSubtitle: context.tr.meditation,
+                rightSubtitle: context.tr.minCount('3-10'),
                 onPressed: () => context.push(AppRoute.details),
               ),
               const SizedBox(height: 30),

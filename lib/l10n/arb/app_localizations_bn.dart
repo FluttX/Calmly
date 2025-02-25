@@ -226,4 +226,10 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get signupSuccess => 'সফলভাবে সাইন আপ হয়েছে! পুনঃনির্দেশ করা হচ্ছে...';
+
+  @override
+  String get dailyClam => 'দৈনিক শান্তি';
+
+  @override
+  String get pausePractice => 'অনুশীলন বিরতি';
 }

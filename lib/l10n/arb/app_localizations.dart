@@ -498,6 +498,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Signup successful! Redirecting...'**
   String get signupSuccess;
+
+  /// No description provided for @dailyClam.
+  ///
+  /// In en, this message translates to:
+  /// **'Daily Calm'**
+  String get dailyClam;
+
+  /// No description provided for @pausePractice.
+  ///
+  /// In en, this message translates to:
+  /// **'PAUSE PRACTICE'**
+  String get pausePractice;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

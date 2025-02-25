@@ -226,4 +226,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get signupSuccess => '¡Registro exitoso! Redirigiendo...';
+
+  @override
+  String get dailyClam => 'Calma Diaria';
+
+  @override
+  String get pausePractice => 'Pausar Práctica';
 }

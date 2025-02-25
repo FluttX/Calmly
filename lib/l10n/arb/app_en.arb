@@ -66,5 +66,7 @@
     "nameIsRequired": "Name is required",
     "nameValidation": "Name must be at least 3 characters",
     "privacyPolicyValidation": "Please accept the Privacy Policy to continue.",
-    "signupSuccess": "Signup successful! Redirecting..."
+    "signupSuccess": "Signup successful! Redirecting...",
+    "dailyClam": "Daily Calm",
+    "pausePractice": "PAUSE PRACTICE"
 }
