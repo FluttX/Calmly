@@ -15,3 +15,8 @@ class SelectMeditateCategory extends MeditateEvent {
   @override
   List<Object> get props => [selectedIndex];
 }
+
+final class LoadMeditateTopics extends MeditateEvent {
+  @override
+  List<Object?> get props => [];
+}

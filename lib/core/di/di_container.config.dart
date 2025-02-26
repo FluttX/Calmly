@@ -36,6 +36,8 @@ import 'package:calmly/features/meditate/domain/repository/meditate_repository.d
     as _i171;
 import 'package:calmly/features/meditate/domain/usecase/get_meditate_categories_usecase.dart'
     as _i508;
+import 'package:calmly/features/meditate/domain/usecase/get_meditate_topics_usecase.dart'
+    as _i441;
 import 'package:calmly/features/onboarding/data/datasource/remote/day_remote_datasource.dart'
     as _i953;
 import 'package:calmly/features/onboarding/data/datasource/remote/topic_remote_datasource.dart'
@@ -95,6 +97,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i162.GetRecommendedCoursesUsecase(gh<_i904.CourseRepository>()));
     gh.singleton<_i508.GetMeditateCategoriesUseCase>(() =>
         _i508.GetMeditateCategoriesUseCase(gh<_i171.MeditateRepository>()));
+    gh.singleton<_i441.GetMeditateTopicsUsecase>(
+        () => _i441.GetMeditateTopicsUsecase(gh<_i171.MeditateRepository>()));
     return this;
   }
 }

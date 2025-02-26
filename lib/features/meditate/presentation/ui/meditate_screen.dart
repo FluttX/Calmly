@@ -38,6 +38,7 @@ class MeditateScreen extends StatelessWidget {
               iconBackgroundColor: context.colors.secondaryColor,
               onPressed: () => context.push(AppRoute.details),
             ),
+            const MeditateGridview(),
           ],
         ),
       ),

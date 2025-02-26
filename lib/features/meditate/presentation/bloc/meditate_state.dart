@@ -7,36 +7,58 @@ final class MeditateInitial extends MeditateState {
   List<Object?> get props => [];
 }
 
-final class MeditateCategoryLoading extends MeditateState {
+final class MeditateLoading extends MeditateState {
   @override
   List<Object?> get props => [];
 }
 
-final class MeditateCategoryLoaded extends MeditateState {
-  MeditateCategoryLoaded({required this.categories, this.selectedIndex = 0});
+class MeditateLoaded extends MeditateState {
+  MeditateLoaded({
+    this.categories = const [],
+    this.topics = const [],
+    this.isLoadingCategories = false,
+    this.isLoadingTopics = false,
+    this.categoryError,
+    this.topicError,
+    this.selectedIndex = 0,
+  });
 
-  final int selectedIndex;
   final List<CategoryData> categories;
+  final List<MeditateData> topics;
+  final bool isLoadingCategories;
+  final bool isLoadingTopics;
+  final String? categoryError;
+  final String? topicError;
+  final int selectedIndex;
 
-  MeditateCategoryLoaded copyWith({
+  MeditateLoaded copyWith({
     List<CategoryData>? categories,
+    List<MeditateData>? topics,
+    bool? isLoadingCategories,
+    bool? isLoadingTopics,
+    String? categoryError,
+    String? topicError,
     int? selectedIndex,
   }) {
-    return MeditateCategoryLoaded(
+    return MeditateLoaded(
       categories: categories ?? this.categories,
+      topics: topics ?? this.topics,
+      isLoadingCategories: isLoadingCategories ?? this.isLoadingCategories,
+      isLoadingTopics: isLoadingTopics ?? this.isLoadingTopics,
+      categoryError: categoryError ?? this.categoryError,
+      topicError: topicError ?? this.topicError,
       selectedIndex: selectedIndex ?? this.selectedIndex,
     );
   }
 
   @override
-  List<Object?> get props => [selectedIndex, categories];
-}
-
-final class MeditateCategoryError extends MeditateState {
-  MeditateCategoryError(this.message);
-
-  final String message;
-
-  @override
-  List<Object?> get props => [message];
+  List<Object?> get props => [
+        categories,
+        topics,
+        isLoadingCategories,
+        isLoadingTopics,
+        categoryError,
+        topicError,
+        selectedIndex,
+      ];
 }

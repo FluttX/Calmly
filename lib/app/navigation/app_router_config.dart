@@ -63,7 +63,7 @@ class AppRouterConfig {
           ),
           BlocProvider(
             create: (context) =>
-                MeditateBloc(inject())..add(LoadMeditateCategories()),
+                MeditateBloc(inject(), inject())..add(LoadMeditateCategories()),
           ),
         ],
         child: const MainTabView(),

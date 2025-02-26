@@ -12,9 +12,16 @@ class MeditateCategories extends StatelessWidget {
       height: 120,
       child: BlocBuilder<MeditateBloc, MeditateState>(
         builder: (context, state) {
-          if (state is MeditateCategoryLoading) {
-            return const Center(child: CircularProgressIndicator.adaptive());
-          } else if (state is MeditateCategoryLoaded) {
+          if (state is MeditateLoaded) {
+            if (state.isLoadingCategories && state.categories.isEmpty) {
+              return const Center(child: CircularProgressIndicator.adaptive());
+            }
+            if (state.categoryError != null) {
+              return Center(
+                child: Text('Error loading categories: ${state.categoryError}'),
+              );
+            }
+
             return ListView.separated(
               itemCount: state.categories.length,
               scrollDirection: Axis.horizontal,
