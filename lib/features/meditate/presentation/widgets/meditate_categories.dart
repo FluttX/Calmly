@@ -10,18 +10,11 @@ class MeditateCategories extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 120,
-      child: BlocBuilder<MeditateBloc, MeditateState>(
+      child: BlocBuilder<MeditateCategoryBloc, MeditateCategoryState>(
         builder: (context, state) {
-          if (state is MeditateLoaded) {
-            if (state.isLoadingCategories && state.categories.isEmpty) {
-              return const Center(child: CircularProgressIndicator.adaptive());
-            }
-            if (state.categoryError != null) {
-              return Center(
-                child: Text('Error loading categories: ${state.categoryError}'),
-              );
-            }
-
+          if (state is MeditateCategoryLoading) {
+            return const Center(child: CircularProgressIndicator.adaptive());
+          } else if (state is MeditateCategoryLoaded) {
             return ListView.separated(
               itemCount: state.categories.length,
               scrollDirection: Axis.horizontal,
@@ -41,12 +34,16 @@ class MeditateCategories extends StatelessWidget {
                   icon: category.icon,
                   onTap: () {
                     context
-                        .read<MeditateBloc>()
+                        .read<MeditateCategoryBloc>()
                         .add(SelectMeditateCategory(index));
                   },
                 );
               },
               separatorBuilder: (_, __) => const SizedBox(width: 20),
+            );
+          } else if (state is MeditateCategoryError) {
+            return Center(
+              child: Text('Error loading categories: ${state.message}'),
             );
           }
 

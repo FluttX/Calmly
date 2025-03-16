@@ -9,18 +9,11 @@ class MeditateGridview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<MeditateBloc, MeditateState>(
+    return BlocBuilder<MeditateTopicBloc, MeditateTopicState>(
       builder: (context, state) {
-        if (state is MeditateLoaded) {
-          if (state.isLoadingTopics && state.topics.isEmpty) {
-            return const Center(child: CircularProgressIndicator.adaptive());
-          }
-          if (state.topicError != null) {
-            return Center(
-              child: Text('Error loading topics: ${state.topicError}'),
-            );
-          }
-
+        if (state is MeditateTopicLoading) {
+          return const Center(child: CircularProgressIndicator.adaptive());
+        } else if (state is MeditateTopicLoaded) {
           return MasonryGridView.count(
             shrinkWrap: true,
             itemCount: state.topics.length,
@@ -43,8 +36,9 @@ class MeditateGridview extends StatelessWidget {
               );
             },
           );
+        } else if (state is MeditateTopicError) {
+          return Center(child: Text('Error loading topics: ${state.message}'));
         }
-
         return const SizedBox();
       },
     );
