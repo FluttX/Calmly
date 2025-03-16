@@ -21,7 +21,11 @@ class CourseBloc extends Bloc<CourseEvent, CourseState> {
     emit(CourseLoading());
     try {
       final courses = await _recommendedCoursesUsecase.call();
-      emit(CourseLoaded(courses));
+
+      courses.fold(
+        (error) => emit(CourseError(error.toString())),
+        (courses) => emit(CourseLoaded(courses)),
+      );
     } catch (e) {
       emit(CourseError(e.toString()));
     }
