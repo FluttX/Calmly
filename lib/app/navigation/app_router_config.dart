@@ -5,6 +5,7 @@ import 'package:calmly/features/details/details.dart';
 import 'package:calmly/features/home/home.dart';
 import 'package:calmly/features/main_tab_view/main_tab_view.dart';
 import 'package:calmly/features/meditate/meditate.dart';
+import 'package:calmly/features/music/music.dart';
 import 'package:calmly/features/onboarding/onboarding.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
@@ -60,6 +61,9 @@ class AppRouterConfig {
           BlocProvider(
             create: (context) =>
                 CourseBloc(inject())..add(LoadRecommendedCoursesEvent()),
+          ),
+          BlocProvider(
+            create: (context) => MusicBloc(inject())..add(LoadMusicEvent()),
           ),
           BlocProvider(
             create: (context) =>

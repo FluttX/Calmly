@@ -38,6 +38,14 @@ import 'package:calmly/features/meditate/domain/usecase/get_meditate_categories_
     as _i508;
 import 'package:calmly/features/meditate/domain/usecase/get_meditate_topics_usecase.dart'
     as _i441;
+import 'package:calmly/features/music/data/datasource/remote/music_remote_datasource.dart'
+    as _i4;
+import 'package:calmly/features/music/data/repository/music_repository_impl.dart'
+    as _i47;
+import 'package:calmly/features/music/domain/repository/music_repository.dart'
+    as _i706;
+import 'package:calmly/features/music/domain/usecase/get_music_usecase.dart'
+    as _i700;
 import 'package:calmly/features/onboarding/data/datasource/remote/day_remote_datasource.dart'
     as _i953;
 import 'package:calmly/features/onboarding/data/datasource/remote/topic_remote_datasource.dart'
@@ -71,6 +79,7 @@ extension GetItInjectableX on _i174.GetIt {
     gh.singleton<_i953.DayRemoteDataSource>(() => _i953.DayRemoteDataSource());
     gh.singleton<_i673.TopicRemoteDataSource>(
         () => _i673.TopicRemoteDataSource());
+    gh.singleton<_i4.MusicRemoteDatasource>(() => _i4.MusicRemoteDatasource());
     gh.singleton<_i655.DayRepository>(
         () => _i1018.DayRepositoryImpl(gh<_i655.DayRemoteDataSource>()));
     gh.singleton<_i655.TopicRepository>(() => _i4.TopicRepositoryImpl(
@@ -79,10 +88,14 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i855.MeditateRemoteDataSourceImpl());
     gh.singleton<_i513.AudioRemoteDataSource>(
         () => _i513.AudioRemoteDataSourceImpl());
+    gh.singleton<_i706.MusicRepository>(
+        () => _i47.MusicRepositoryImpl(gh<_i4.MusicRemoteDatasource>()));
     gh.singleton<_i904.CourseRepository>(
         () => _i38.CourseRepositoryImpl(gh<_i478.CourseRemoteDatasource>()));
     gh.singleton<_i352.ThemeRepository>(
         () => _i549.ThemeRepositoryImpl(gh<_i986.Box<String>>()));
+    gh.singleton<_i700.GetMusicUsecase>(
+        () => _i700.GetMusicUsecase(gh<_i706.MusicRepository>()));
     gh.singleton<_i171.MeditateRepository>(() =>
         _i723.MeditateRepositoryImpl(gh<_i855.MeditateRemoteDataSource>()));
     gh.singleton<_i136.AudioRepository>(

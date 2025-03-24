@@ -20,12 +20,20 @@ class AppImages {
   static const icFacebook = '$_imageUrl/login/ic_facebook.svg';
   static const icGoogle = '$_imageUrl/login/ic_google.svg';
 
+  // Meditate
   static const anxietyRelease = '$_imageUrl/meditate/anxiety_release.svg';
   static const dailyClam = '$_imageUrl/meditate/daily_clam.svg';
   static const daysOfCalm = '$_imageUrl/meditate/days_of_calm.svg';
   static const meditateHappiness = '$_imageUrl/meditate/happiness.svg';
   static const meditateReduceAnxiety = '$_imageUrl/meditate/reduce_anxiety.svg';
 
+  // Music
+  static const goodNight = '$_imageUrl/music/good_night.svg';
+  static const moonClouds = '$_imageUrl/music/moon_clouds.svg';
+  static const nightIsland = '$_imageUrl/music/night_island.svg';
+  static const sweetSleep = '$_imageUrl/music/sweet_sleep.svg';
+
+  // On Boarding
   static const welcomeAppLogo = '$_imageUrl/welcome/welcome_app_logo.svg';
   static const welcomeBackground = '$_imageUrl/welcome/welcome_background.svg';
 

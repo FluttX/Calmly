@@ -49,6 +49,7 @@ flutter:
     - assets/images/login/
     - assets/images/onboarding/
     - assets/images/meditate/
+    - assets/images/music/
     - assets/images/topic/
     - assets/images/welcome/
 
