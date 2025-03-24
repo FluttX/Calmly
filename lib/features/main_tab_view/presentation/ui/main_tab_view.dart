@@ -2,6 +2,7 @@ import 'package:calmly/core/utils/utils.dart';
 import 'package:calmly/features/home/home.dart';
 import 'package:calmly/features/main_tab_view/main_tab_view.dart';
 import 'package:calmly/features/meditate/meditate.dart';
+import 'package:calmly/features/music/music.dart';
 import 'package:calmly/l10n/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -74,9 +75,9 @@ class _MainTabViewState extends State<MainTabView>
           physics: const BouncingScrollPhysics(),
           children: [
             const HomeScreen(),
-            Container(color: Colors.green.shade300),
+            const MusicScreen(),
             const MeditateScreen(),
-            Container(color: Colors.blue.shade300),
+            const MusicScreen(),
             Container(color: Colors.orange.shade300),
           ],
         ),

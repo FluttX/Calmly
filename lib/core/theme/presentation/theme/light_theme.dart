@@ -160,7 +160,9 @@ class LightTheme extends AppTheme {
         ),
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(15),
-          borderSide: BorderSide(color: colors.textSecondary.withOpacity(0.5)),
+          borderSide: BorderSide(
+            color: colors.textSecondary..withValues(alpha: 0.5),
+          ),
         ),
         contentPadding: const EdgeInsets.symmetric(
           horizontal: 16,
@@ -258,8 +260,11 @@ class LightColor extends AppColors {
   Color get cardBackground => const Color(0xFFFFC97E);
 
   @override
-  Color get iconBackground => const Color(0xFF03174C).withOpacity(0.5);
+  Color get iconBackground => const Color(0xFF03174C)..withValues(alpha: 0.5);
 
   @override
   Color get divider => const Color(0xFFADB8D9);
+
+  @override
+  Color get secondaryBackground => const Color(0xFF03174C);
 }

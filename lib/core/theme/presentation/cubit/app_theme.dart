@@ -47,6 +47,8 @@ abstract class AppColors {
 
   Color get background;
 
+  Color get secondaryBackground;
+
   Color get cardBackground;
 
   Color get iconBackground;
