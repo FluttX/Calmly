@@ -24,7 +24,7 @@ dependencies:
   injectable: ^2.5.0
   intl: ^0.20.2
   json_annotation: ^4.9.0
-  top_snackbar_flutter: ^3.2.0
+  top_snackbar_flutter: ^3.3.0
 
 dev_dependencies:
   bloc_test: ^10.0.0
