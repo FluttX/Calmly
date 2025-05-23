@@ -835,10 +835,10 @@ packages:
     dependency: "direct main"
     description:
       name: top_snackbar_flutter
-      sha256: f86ec477c60b716fac33a767f278fa2de275193b1d7a1f4fc4838b6088d7d338
+      sha256: ad3f93062450e8c7db97b271d405c180536408cc2be4380a59da7022eb1d750c
       url: "https://pub.dev"
     source: hosted
-    version: "3.2.0"
+    version: "3.3.0"
   typed_data:
     dependency: transitive
     description:
