@@ -12,7 +12,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get onboardingTitle => 'Somos lo que hacemos';
 
   @override
-  String get onboardingSubtitle => 'Miles de personas usan Silent Moon para pequeñas meditaciones';
+  String get onboardingSubtitle =>
+      'Miles de personas usan Silent Moon para pequeñas meditaciones';
 
   @override
   String get login => 'INICIAR SESIÓN';
@@ -76,7 +77,8 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get welcomeSubtitle => 'Explora la aplicación, encuentra un poco de paz mental para prepararte para la meditación.';
+  String get welcomeSubtitle =>
+      'Explora la aplicación, encuentra un poco de paz mental para prepararte para la meditación.';
 
   @override
   String get whatBringsYou => '¿Qué te trae';
@@ -93,13 +95,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get meditateTimeTitle => '¿A qué hora te gustaría meditar?';
 
   @override
-  String get meditateTimeSubtitle => 'Puedes elegir cualquier hora, pero recomendamos hacerlo a primera hora de la mañana.';
+  String get meditateTimeSubtitle =>
+      'Puedes elegir cualquier hora, pero recomendamos hacerlo a primera hora de la mañana.';
 
   @override
   String get meditateDayTitle => '¿Qué día te gustaría meditar?';
 
   @override
-  String get meditateDaySubtitle => 'Lo ideal es todos los días, pero recomendamos al menos cinco.';
+  String get meditateDaySubtitle =>
+      'Lo ideal es todos los días, pero recomendamos al menos cinco.';
 
   @override
   String get save => 'GUARDAR';
@@ -179,7 +183,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get goodMorning => 'Feliz mañana';
 
   @override
-  String get courseDetails => 'Relaja la mente para una noche de sueño reparador con estos tonos profundos y ambientales.';
+  String get courseDetails =>
+      'Relaja la mente para una noche de sueño reparador con estos tonos profundos y ambientales.';
 
   @override
   String favoriteCount(Object count) {
@@ -201,7 +206,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get femaleVoice => 'VOZ FEMENINA';
 
   @override
-  String get meditateSubtitle => 'Podemos aprender a reconocer cuando nuestras mentes están haciendo sus acrobacias diarias habituales.';
+  String get meditateSubtitle =>
+      'Podemos aprender a reconocer cuando nuestras mentes están haciendo sus acrobacias diarias habituales.';
 
   @override
   String get emailIsRequired => 'El correo electrónico es obligatorio';
@@ -213,7 +219,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get passwordIsRequired => 'La contraseña es obligatoria';
 
   @override
-  String get passwordValidation => 'La contraseña debe tener al menos 6 caracteres';
+  String get passwordValidation =>
+      'La contraseña debe tener al menos 6 caracteres';
 
   @override
   String get nameIsRequired => 'El nombre es obligatorio';
@@ -222,7 +229,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get nameValidation => 'El nombre debe tener al menos 3 caracteres';
 
   @override
-  String get privacyPolicyValidation => 'Por favor, acepte la Política de Privacidad para continuar.';
+  String get privacyPolicyValidation =>
+      'Por favor, acepte la Política de Privacidad para continuar.';
 
   @override
   String get signupSuccess => '¡Registro exitoso! Redirigiendo...';

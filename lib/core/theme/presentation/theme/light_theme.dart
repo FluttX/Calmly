@@ -179,7 +179,7 @@ class LightTheme extends AppTheme {
       );
 
   @override
-  TabBarTheme get tabBarTheme => TabBarTheme(
+  TabBarThemeData get tabBarTheme => TabBarThemeData(
         indicatorColor: colors.primaryColor,
         indicatorSize: TabBarIndicatorSize.label,
         dividerColor: const Color(0xFFE4E6FD),

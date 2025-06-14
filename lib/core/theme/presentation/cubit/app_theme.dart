@@ -15,7 +15,7 @@ abstract class AppTheme {
 
   InputDecorationTheme get inputDecorationTheme;
 
-  TabBarTheme get tabBarTheme;
+  TabBarThemeData get tabBarTheme;
 
   ThemeData get theme;
 }

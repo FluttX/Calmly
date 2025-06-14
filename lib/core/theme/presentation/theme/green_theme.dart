@@ -179,7 +179,7 @@ class GreenTheme extends AppTheme {
       );
 
   @override
-  TabBarTheme get tabBarTheme => const TabBarTheme();
+  TabBarThemeData get tabBarTheme => const TabBarThemeData();
 
   @override
   DividerThemeData get dividerThemeData => const DividerThemeData();

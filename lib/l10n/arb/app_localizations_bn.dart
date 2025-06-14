@@ -12,7 +12,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get onboardingTitle => 'আমরা যা করি, তাই আমরা';
 
   @override
-  String get onboardingSubtitle => 'হাজারো মানুষ ছোট ছোট ধ্যানের জন্য সাইলেন্ট মুন ব্যবহার করছে';
+  String get onboardingSubtitle =>
+      'হাজারো মানুষ ছোট ছোট ধ্যানের জন্য সাইলেন্ট মুন ব্যবহার করছে';
 
   @override
   String get login => 'লগইন করুন';
@@ -76,7 +77,8 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get welcomeSubtitle => 'অ্যাপটি অন্বেষণ করুন, ধ্যানের জন্য প্রস্তুত হতে মানসিক শান্তি খুঁজুন।';
+  String get welcomeSubtitle =>
+      'অ্যাপটি অন্বেষণ করুন, ধ্যানের জন্য প্রস্তুত হতে মানসিক শান্তি খুঁজুন।';
 
   @override
   String get whatBringsYou => 'কি তোমাকে এনেছে';
@@ -87,19 +89,22 @@ class AppLocalizationsBn extends AppLocalizations {
   }
 
   @override
-  String get chooseATopic => 'একটি বিষয় নির্বাচন করুন যাতে মনোযোগ কেন্দ্রীভূত করা যায়:';
+  String get chooseATopic =>
+      'একটি বিষয় নির্বাচন করুন যাতে মনোযোগ কেন্দ্রীভূত করা যায়:';
 
   @override
   String get meditateTimeTitle => 'আপনি কখন মেডিটেশন করতে চান?';
 
   @override
-  String get meditateTimeSubtitle => 'আপনি যেকোনো সময় বেছে নিতে পারেন, তবে আমরা সকালে প্রথমেই করার পরামর্শ দিই।';
+  String get meditateTimeSubtitle =>
+      'আপনি যেকোনো সময় বেছে নিতে পারেন, তবে আমরা সকালে প্রথমেই করার পরামর্শ দিই।';
 
   @override
   String get meditateDayTitle => 'আপনি কোন দিনে মেডিটেশন করতে চান?';
 
   @override
-  String get meditateDaySubtitle => 'প্রতিদিন করাই সর্বোত্তম, তবে অন্তত পাঁচ দিন বেছে নেওয়ার পরামর্শ দিই।';
+  String get meditateDaySubtitle =>
+      'প্রতিদিন করাই সর্বোত্তম, তবে অন্তত পাঁচ দিন বেছে নেওয়ার পরামর্শ দিই।';
 
   @override
   String get save => 'সংরক্ষণ করুন';
@@ -179,7 +184,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get goodMorning => 'শুভ সকাল';
 
   @override
-  String get courseDetails => 'গভীর, পরিবেষ্টিত সুরগুলির মাধ্যমে মনকে আরামদায়ক ঘুমের জন্য প্রস্তুত করুন।';
+  String get courseDetails =>
+      'গভীর, পরিবেষ্টিত সুরগুলির মাধ্যমে মনকে আরামদায়ক ঘুমের জন্য প্রস্তুত করুন।';
 
   @override
   String favoriteCount(Object count) {
@@ -201,7 +207,8 @@ class AppLocalizationsBn extends AppLocalizations {
   String get femaleVoice => 'মহিলা কণ্ঠ';
 
   @override
-  String get meditateSubtitle => 'আমরা শিখতে পারি কিভাবে চিনতে হয় যখন আমাদের মন তাদের স্বাভাবিক দৈনন্দিন কসরত করছে।';
+  String get meditateSubtitle =>
+      'আমরা শিখতে পারি কিভাবে চিনতে হয় যখন আমাদের মন তাদের স্বাভাবিক দৈনন্দিন কসরত করছে।';
 
   @override
   String get emailIsRequired => 'ইমেল প্রয়োজন';
@@ -222,10 +229,12 @@ class AppLocalizationsBn extends AppLocalizations {
   String get nameValidation => 'নাম কমপক্ষে ৩ অক্ষরের হতে হবে';
 
   @override
-  String get privacyPolicyValidation => 'চালিয়ে যেতে অনুগ্রহ করে গোপনীয়তা নীতি গ্রহণ করুন।';
+  String get privacyPolicyValidation =>
+      'চালিয়ে যেতে অনুগ্রহ করে গোপনীয়তা নীতি গ্রহণ করুন।';
 
   @override
-  String get signupSuccess => 'সফলভাবে সাইন আপ হয়েছে! পুনঃনির্দেশ করা হচ্ছে...';
+  String get signupSuccess =>
+      'সফলভাবে সাইন আপ হয়েছে! পুনঃনির্দেশ করা হচ্ছে...';
 
   @override
   String get dailyClam => 'দৈনিক শান্তি';

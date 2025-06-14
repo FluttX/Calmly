@@ -12,7 +12,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get onboardingTitle => 'We are what we do';
 
   @override
-  String get onboardingSubtitle => 'Thousand of people are using silent moon for smalls meditation';
+  String get onboardingSubtitle =>
+      'Thousand of people are using silent moon for smalls meditation';
 
   @override
   String get login => 'LOG IN';
@@ -76,7 +77,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get welcomeSubtitle => 'Explore the app, Find some peace of mind to prepare for meditation.';
+  String get welcomeSubtitle =>
+      'Explore the app, Find some peace of mind to prepare for meditation.';
 
   @override
   String get whatBringsYou => 'What Brings you';
@@ -93,13 +95,15 @@ class AppLocalizationsEn extends AppLocalizations {
   String get meditateTimeTitle => 'What time would you like to meditate?';
 
   @override
-  String get meditateTimeSubtitle => 'Any time you can choose but We recommend first thing in th morning.';
+  String get meditateTimeSubtitle =>
+      'Any time you can choose but We recommend first thing in th morning.';
 
   @override
   String get meditateDayTitle => 'Which day would you like to meditate?';
 
   @override
-  String get meditateDaySubtitle => 'Everyday is best, but we recommend picking at least five.';
+  String get meditateDaySubtitle =>
+      'Everyday is best, but we recommend picking at least five.';
 
   @override
   String get save => 'SAVE';
@@ -179,7 +183,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get goodMorning => 'Happy Morning';
 
   @override
-  String get courseDetails => 'Ease the mind into a restful night’s sleep with these deep, ambient tones.';
+  String get courseDetails =>
+      'Ease the mind into a restful night’s sleep with these deep, ambient tones.';
 
   @override
   String favoriteCount(Object count) {
@@ -201,7 +206,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get femaleVoice => 'FEMALE VOICE';
 
   @override
-  String get meditateSubtitle => 'we can learn how to recognize when our minds are doing their normal everyday acrobatics.';
+  String get meditateSubtitle =>
+      'we can learn how to recognize when our minds are doing their normal everyday acrobatics.';
 
   @override
   String get emailIsRequired => 'Email is required';
@@ -222,7 +228,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get nameValidation => 'Name must be at least 3 characters';
 
   @override
-  String get privacyPolicyValidation => 'Please accept the Privacy Policy to continue.';
+  String get privacyPolicyValidation =>
+      'Please accept the Privacy Policy to continue.';
 
   @override
   String get signupSuccess => 'Signup successful! Redirecting...';
