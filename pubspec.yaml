@@ -21,7 +21,7 @@ dependencies:
   go_router: ^16.2.4
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  injectable: ^2.5.1
+  injectable: ^2.5.2
   intl: ^0.20.2
   json_annotation: ^4.9.0
   top_snackbar_flutter: ^3.3.0
